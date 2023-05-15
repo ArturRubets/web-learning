@@ -1,7 +1,8 @@
 <?php
-
 require_once '../../vendor/autoload.php';
 require_once '../../config/secrets.php';
+
+session_start();
 
 \Stripe\Stripe::setApiKey($stripeSecretKey);
 
@@ -31,10 +32,24 @@ try {
     $paymentIntent = \Stripe\PaymentIntent::create([
         'amount' => calculateOrderAmount($jsonObj->items),
         'currency' => 'usd',
+        "description" => "Intro To React Course",
         'automatic_payment_methods' => [
             'enabled' => true,
         ],
     ]);
+
+    $stripe = new \Stripe\StripeClient($stripeSecretKey);
+    $customer = $stripe->customers->create(
+        [
+            'email' => 'jenny.rosen@example.com',
+            'payment_method' => 'pm_card_visa',
+            'invoice_settings' => ['default_payment_method' => 'pm_card_visa'],
+        ]
+    );
+
+    $_SESSION['customer'] = $customer;
+
+    $_SESSION['paymentIntent'] = $paymentIntent;
 
     $output = [
         'clientSecret' => $paymentIntent->client_secret,

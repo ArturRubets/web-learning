@@ -1,10 +1,18 @@
 // This is a public sample test API key.
 // Don’t submit any personally identifiable information in requests made with this key.
 // Sign in to see your own test API key embedded in code samples.
-const stripe = Stripe("pk_test_51N5AE4HJUtHsYL0fgEUGd7hB8viQUXd4Wgbc1Z2SyCUf1U1StonfMqVxH6X0xhj4CmkPQ7R68eczs8lRaD9uZDbu00BAwB4Kyb");
+const stripe = Stripe(
+  "pk_test_51N5AE4HJUtHsYL0fgEUGd7hB8viQUXd4Wgbc1Z2SyCUf1U1StonfMqVxH6X0xhj4CmkPQ7R68eczs8lRaD9uZDbu00BAwB4Kyb"
+);
 
 // The items the customer wants to buy. Price in cents.
-const items = [{ id: "React Course", price: 5000, quantity: 1 }];
+const items = [
+  {
+    id: "React Course",
+    price: 5000,
+    quantity: 1,
+  },
+];
 
 let elements;
 
@@ -15,7 +23,7 @@ document
   .querySelector("#payment-form")
   .addEventListener("submit", handleSubmit);
 
-const emailAddress = '';
+const emailAddress = "";
 // Fetches a payment intent and captures the client secret
 async function initialize() {
   const { clientSecret } = await fetch("../app/controllers/create.php", {
@@ -44,7 +52,8 @@ async function handleSubmit(e) {
   const { error } = await stripe.confirmPayment({
     elements,
     confirmParams: {
-      return_url: "http://localhost/php-learning/php-stripe-paypage/app/views/success.php",
+      return_url:
+        "http://localhost/php-learning/php-stripe-paypage/app/views/success.php",
       receipt_email: emailAddress,
     },
   });
