@@ -78,10 +78,11 @@
                 <label for="logo" class="inline-block text-lg mb-2">
                     Company Logo
                 </label>
-                <input type="file" class="border border-gray-200 rounded p-2 w-full" name="logo" />
+                <input type="file" class="border border-gray-200 rounded p-2 w-full" name="logo" id="logoInput"
+                    accept="image/*" />
                 <img class="w-48 mr-6 mb-6"
                     src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('images/no-image.png') }}"
-                    alt="" />
+                    alt="" id="imagePreview" />
 
                 @error('logo')
                     <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
@@ -107,6 +108,22 @@
 
                 <a href="/" class="text-black ml-4"> Back </a>
             </div>
+
+            <script>
+                $(document).ready(function() {
+                    $('#logoInput').change(function() {
+                        const file = $(this).prop('files')[0];
+                        if (file) {
+                            const reader = new FileReader();
+                            reader.onload = function(e) {
+                                const imageUrl = e.target.result;
+                                $('#imagePreview').attr('src', imageUrl);
+                            };
+                            reader.readAsDataURL(file);
+                        }
+                    });
+                });
+            </script>
         </form>
     </x-card>
 </x-layout>
