@@ -26,7 +26,7 @@
     <title>LaraGigs | Find Laravel Jobs & Projects</title>
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen">
     <nav class="flex justify-between items-center mb-4">
         <a href="/"><img class="w-24" src="{{ asset('images/logo.png') }}" alt="" class="logo" /></a>
         <ul class="flex space-x-6 mr-6 text-lg">
@@ -59,11 +59,11 @@
             @endauth
         </ul>
     </nav>
-    <main>
+    <main class="grow">
         {{ $slot }}
     </main>
     <footer
-        class="w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center">
+        class="w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center shrink-0">
         <p class="ml-2">Copyright &copy; 2023, All Rights reserved</p>
         <a href="/listings/create" class="fixed right-10 bg-black text-white py-2 px-5 rounded-full bottom-5">Post
             Job</a>
