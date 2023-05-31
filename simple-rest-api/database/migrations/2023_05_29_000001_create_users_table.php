@@ -7,6 +7,14 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('users');
+    }
+
+    /**
      * Run the migrations.
      */
     public function up(): void
@@ -19,14 +27,11 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-        });
-    }
+            $table->string('phone');
+            $table->unsignedBigInteger('position_id');
+            $table->string('photo');
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('users');
+            $table->foreign('position_id')->references('id')->on('positions');
+        });
     }
 };
