@@ -24,18 +24,20 @@ class CommentController extends Controller
             'user_name' => 'required|alpha_num',
             'email' => 'required|email',
             'home_page' => 'nullable|url',
-            'captcha' => 'required|alpha_num',
+            'captcha' => 'required|captcha',
             'text' => 'required|not_regex:/<[^>]*>/',
         ]);
 
         // Save the comment
-        return Comment::create([
+        Comment::create([
             'user_name' => $request->user_name,
             'email' => $request->email,
             'home_page' => $request->home_page,
             'captcha' => $request->captcha,
             'text' => $request->text,
         ]);
+
+        return response()->json(['redirect' => '', 'status' => 'success']);
     }
 
     /**
@@ -60,5 +62,10 @@ class CommentController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    public function reloadCaptcha()
+    {
+        return response()->json(['captcha' => captcha_img('flat')]);
     }
 }
