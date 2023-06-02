@@ -1,5 +1,5 @@
 <div id="popup"
-    class="fixed top-0 left-0 bottom-0 right-0 flex items-center justify-center w-full bg-black bg-opacity-50 hidden"
+    class="fixed top-0 left-0 bottom-0 right-0 flex items-center justify-center w-full bg-black bg-opacity-50 hidden p-2"
     style="overflow: auto">
     <div class="bg-white p-4 m-4 mx-auto rounded" style="max-width: 600px;">
         <div class="relative">
@@ -33,7 +33,9 @@
                 <div class="mb-4">
                     <label for="captcha-input" class="block font-medium text-gray-700">CAPTCHA:</label>
                     <div class="flex mb-1">
-                        <span id="captcha">{!! captcha_img('flat') !!}</span>
+                        <div class="w-40">
+                            <span id="captcha">{!! captcha_img('flat') !!}</span>
+                        </div>
                         <button type="button" id="reload"
                             class="ml-2 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition-all duration-300 ease-in-out"
                             style="font-size: 20px;">
