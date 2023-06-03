@@ -12,7 +12,13 @@ class CommentController extends Controller
      */
     public function index()
     {
-        return Comment::all();
+        $comments = Comment::all();
+
+        foreach ($comments as $comment) {
+            $comment->formatted_created_at = $comment->created_at->format('d.m.y в H:i');
+        }
+
+        return view('welcome', compact('comments'));
     }
 
     /**

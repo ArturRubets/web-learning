@@ -77,8 +77,8 @@
         */
         function reloadCaptcha() {
             $.ajax({
-                type: "GET",
-                url: "{{ route('comments.reload-captcha') }}",
+                type: 'GET',
+                url: '{{ route('comments.reload-captcha') }}',
                 success: function(data) {
                     $('#captcha').html(data.captcha);
                 }

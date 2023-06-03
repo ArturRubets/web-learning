@@ -16,13 +16,22 @@
 
 <body>
     <main>
-        <div class="py-2 px-2">
+        <div class="p-2">
             <button type="button" id="showForm"
                 class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full">
                 Leave a comment
             </button>
         </div>
         @include('partials._comment-popup')
+        <div class="p-2 flex flex-col gap-y-4">
+            @unless (count($comments) === 0)
+                @foreach ($comments as $comment)
+                    <x-comment :comment="$comment" />
+                @endforeach
+            @else
+                <p class="text-lg font-bold">No comments found</p>
+            @endunless
+        </div>
     </main>
     <script>
         // Function for showing popup

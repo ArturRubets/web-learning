@@ -14,10 +14,6 @@ use App\Http\Controllers\CommentController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/comments', [CommentController::class, 'index']);
+Route::get('/', [CommentController::class, 'index'])->name('comments.index');
 Route::get('/reload-captcha', [CommentController::class, 'reloadCaptcha'])->name('comments.reload-captcha');
-Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+Route::post('/store', [CommentController::class, 'store'])->name('comments.store');
