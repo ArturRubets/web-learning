@@ -32,6 +32,7 @@ class CommentController extends Controller
             'home_page' => 'nullable|url',
             'captcha' => 'required|captcha',
             'text' => 'required|not_regex:/<[^>]*>/',
+            'parent_id' => 'nullable|integer|exists:comments,id'
         ]);
 
         // Save the comment
@@ -41,6 +42,7 @@ class CommentController extends Controller
             'home_page' => $request->home_page,
             'captcha' => $request->captcha,
             'text' => $request->text,
+            'parent_id' => $request->parent_id,
         ]);
 
         return response()->json(['redirect' => '', 'status' => 'success']);

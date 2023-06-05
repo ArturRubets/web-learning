@@ -5,6 +5,7 @@
         <div class="relative">
             <form action="{{ route('comments.store') }}" method="POST" id="commentForm">
                 @csrf
+                <input type="hidden" id="parent-id" name="parent_id" value="">
                 {{-- Username --}}
                 <div class="mb-4">
                     <label for="user-name" class="block font-medium text-gray-700">User Name:</label>

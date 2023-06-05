@@ -15,5 +15,6 @@ class Comment extends Model
         'home_page',
         'captcha',
         'text',
+        'parent_id',
     ];
 }

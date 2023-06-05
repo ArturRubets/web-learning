@@ -7,7 +7,7 @@
         </span>
         <h3 class="text-lg font-bold">{{ $comment->user_name }}</h3>
         <span class="text-gray-400 text-sm">{{ $comment->formatted_created_at }}</span>
-        <button class="text-blue-500 hover:text-blue-600 text-sm font-medium">Reply</button>
+        <button data-comment_id="{{ $comment->id }}" class="hover:text-blue-600 text-sm font-medium">Reply</button>
     </div>
     <p class="text-gray-500">{{ $comment->text }}</p>
 </div>

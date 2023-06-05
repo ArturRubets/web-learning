@@ -35,26 +35,44 @@
         </div>
     </main>
     <script>
-        // Function for showing popup
-        function showPopup() {
-            $('#popup').show();
-            $('body').classList.add('popup-open');
-        }
+        $(document).ready(function() {
+            const body = document.body;
+            const popup = $('#popup');
+            const inputWithParentId = $('#parent-id');
 
-        // Function to close popup
-        function closePopup() {
-            $('#popup').hide();
-            $('body').classList.remove('popup-open');
-        }
+            function changeInputValue(parentId) {
+                inputWithParentId.val(parentId);
+            }
 
-        // Event handler when the "Leave a comment" button is clicked
-        $('#showForm').click(function() {
-            showPopup();
-        });
+            // Function for showing popup
+            function showPopup(parentId = null) {
+                changeInputValue(parentId);
+                popup.show();
+                body.classList.add('popup-open');
+            }
 
-        // Event handler when the "Close" button is clicked
-        $('#closeForm').click(function() {
-            closePopup();
+            // Function to close popup
+            function closePopup() {
+                changeInputValue(null);
+                popup.hide();
+                body.classList.remove('popup-open');
+            }
+
+            // Event handler when the "Leave a comment" button is clicked
+            $('#showForm').click(function() {
+                showPopup();
+            });
+
+            // Event handler when the "Close" button is clicked
+            $('#closeForm').click(function() {
+                closePopup();
+            });
+
+            // Event handler when the buttons with 'data-comment_id' attribute are clicked
+            $('button[data-comment_id]').on('click', function() {
+                const commentId = $(this).data('comment_id');
+                showPopup(commentId);
+            });
         });
     </script>
 </body>
