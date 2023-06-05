@@ -71,6 +71,8 @@
 </div>
 <script>
     $(document).ready(function() {
+        const inputCaptcha = $('#captcha-input');
+
         /*
             Make a request to the server, 
             get a new captcha and 
@@ -84,6 +86,10 @@
                     $('#captcha').html(data.captcha);
                 }
             });
+        }
+
+        function clearInputs() {
+            inputCaptcha.val('');
         }
 
         // A function for handling form submission via AJAX
@@ -120,13 +126,15 @@
                             $('#' + field + '-error').html(
                                 errorMessages); // Display error message
                         });
-
-                        // Refresh captcha after failed validation
-                        reloadCaptcha();
                     } else {
                         // Handling other errors or server errors
                         console.log('AJAX request error:', xhr);
                     }
+
+                    // Refresh captcha after failed validation
+                    reloadCaptcha();
+
+                    clearInputs();
                 }
             });
         }
