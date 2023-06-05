@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
@@ -37,11 +38,13 @@
         // Function for showing popup
         function showPopup() {
             $('#popup').show();
+            $('body').classList.add('popup-open');
         }
 
         // Function to close popup
         function closePopup() {
             $('#popup').hide();
+            $('body').classList.remove('popup-open');
         }
 
         // Event handler when the "Leave a comment" button is clicked
