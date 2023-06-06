@@ -26,9 +26,10 @@
         @include('partials._comment-popup')
         <div class="p-2 flex flex-col gap-y-4">
             @unless (count($comments) === 0)
-                @foreach ($comments as $comment)
-                    <x-comment :comment="$comment" />
-                @endforeach
+                @include('partials._comments')
+
+                <!-- Displaying links to previous and next pages -->
+                {{ $comments->links() }}
             @else
                 <p class="text-lg font-bold">No comments found</p>
             @endunless

@@ -12,11 +12,7 @@ class CommentController extends Controller
      */
     public function index()
     {
-        $comments = Comment::all();
-
-        foreach ($comments as $comment) {
-            $comment->formatted_created_at = $comment->created_at->format('d.m.y в H:i');
-        }
+        $comments = Comment::whereNull('parent_id')->orderBy('created_at', 'desc')->with('replies')->paginate(25);
 
         return view('welcome', compact('comments'));
     }
