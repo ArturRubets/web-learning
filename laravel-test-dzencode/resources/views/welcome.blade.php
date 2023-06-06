@@ -16,23 +16,22 @@
 </head>
 
 <body>
-    <main>
-        <div class="p-2">
+    <main class="flex items-center justify-center">
+        <div class="max-w-screen-md p-4">
             <button type="button" id="showForm"
-                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full">
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full mb-8">
                 Leave a comment
             </button>
-        </div>
-        @include('partials._comment-popup')
-        <div class="p-2 flex flex-col gap-y-4">
-            @unless (count($comments) === 0)
-                @include('partials._comments')
-
-                <!-- Displaying links to previous and next pages -->
-                {{ $comments->links() }}
-            @else
-                <p class="text-lg font-bold">No comments found</p>
-            @endunless
+            <div class="flex flex-col gap-y-4">
+                @unless (count($comments) === 0)
+                    @include('partials._comments')
+                    <!-- Displaying links to previous and next pages -->
+                    {{ $comments->links() }}
+                @else
+                    <p class="text-lg font-bold">No comments found</p>
+                @endunless
+            </div>
+            @include('partials._comment-popup')
         </div>
     </main>
     <script>

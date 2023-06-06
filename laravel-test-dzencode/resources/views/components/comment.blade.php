@@ -1,6 +1,6 @@
 @props(['comment'])
 
-<div class="bg-white p-4 rounded shadow">
+<div class="bg-white p-4 rounded shadow-md">
     <div class="flex items-center gap-x-3 pb-2">
         <span class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200">
             <i class="fa fa-user text-lg"></i>
