@@ -19,9 +19,10 @@
     <main class="flex items-center justify-center">
         <div class="max-w-screen-md p-4">
             <button type="button" id="showForm"
-                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full mb-8">
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full mb-4">
                 Leave a comment
             </button>
+            <x-sort-panel :sortOrder="$sortOrder" :sortBy="$sortBy" />
             <div class="flex flex-col gap-y-4">
                 @unless (count($comments) === 0)
                     @include('partials._comments')
