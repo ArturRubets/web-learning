@@ -25,7 +25,8 @@
                                 {{ $product->name }}
                             </a>
                         </td>
-                        <td><span class="badge">{{ $product->pivot->count }}</span>
+                        <td>
+                            <span class="badge">{{ $product->pivot->count }}</span>
                             <div class="btn-group">
                                 <form action="{{ route('basket-remove', $product) }}" method="POST">
                                     @csrf
