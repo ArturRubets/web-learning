@@ -27,7 +27,15 @@
 </nav>
 
 <div class="container">
-    @yield('content')
+    <div class="starter-template">
+        @if(session('success'))
+            <p class="alert alert-success">{{ session('success') }}</p>
+        @endif
+        @if(session('warning'))
+            <p class="alert alert-warning">{{ session('warning')}}</p>
+        @endif
+        @yield('content')
+    </div>
 </div>
 </body>
 </html>

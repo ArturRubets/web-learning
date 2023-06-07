@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
+use App\Models\Product;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 
 class BasketController extends Controller
 {
@@ -18,9 +20,32 @@ class BasketController extends Controller
         return 'Something wrong';
     }
 
-    public function basketPlace(): View
+    public function basketConfirm(Request $request): RedirectResponse
     {
-        return view('order');
+        $orderId = session('orderId');
+        if (is_null($orderId)) {
+            return redirect()->route('index');
+        }
+        $order = Order::find($orderId);
+        $success = $order->saveOrder($request->name, $request->phone);
+
+        if ($success) {
+            session()->flash('success', 'Your order has been accepted for processing');
+        } else {
+            session()->flash('warning', 'There was an error');
+        }
+
+        return redirect()->route('index');
+    }
+
+    public function basketPlace(): View|RedirectResponse
+    {
+        $orderId = session('orderId');
+        if (is_null($orderId)) {
+            return redirect()->route('index');
+        }
+        $order = Order::find($orderId);
+        return view('order', compact('order'));
     }
 
     public function basketAdd($productId): RedirectResponse
@@ -40,6 +65,10 @@ class BasketController extends Controller
         } else {
             $order->products()->attach($productId);
         }
+
+        $product = Product::find($productId);
+
+        session()->flash('success', "Product added $product->name");
 
         return redirect()->route('basket');
     }
@@ -61,6 +90,10 @@ class BasketController extends Controller
                 $pivotRow->update();
             }
         }
+
+        $product = Product::find($productId);
+
+        session()->flash('warning', "Product removed $product->name");
 
         return redirect()->route('basket');
     }
