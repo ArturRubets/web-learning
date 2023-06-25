@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
+
+:root {
+    --primary-color: #ff0000;
+    --white-color: white;
+}
+
+body {
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Navbar Section */
+
+.navbar-nav .nav-link {
+    color: white; /* Text color for inactive elements */
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color); /* Text color for the active element */
+}
+
+.navbar-nav .nav-link:not(.active):hover {
+    filter: brightness(0.85);
+}
+
+.navbar .btn-start {
+    border-radius: 0;
+    background-color: var(--primary-color);
+}
+
+.navbar .btn-start:hover {
+    filter: brightness(0.85);
+}
+
+/* Hero Section */
+
+#home {
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+
+}
+
+.hero-title {
+    font-size: 8.5vw;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.ready-to-train {
+    color: var(--primary-color);
+}
+
+.your-body {
+    color: var(--white-color);
+}
