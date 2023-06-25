@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use JetBrains\PhpStorm\NoReturn;
+use Illuminate\Contracts\View\View;
 
 class HomeController extends Controller
 {
-    #[NoReturn] public function index(): void
+    public function index(): View
     {
-        dd('Home page');
+        return view('auth.orders.index');
     }
 }

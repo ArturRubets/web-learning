@@ -26,7 +26,9 @@ Auth::routes([
 
 Route::get('logout', [LoginController::class, 'logout'])->name('get-logout');
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+});
 
 Route::get('/', [MainController::class, 'index'])->name('index');
 Route::get('/categories', [MainController::class, 'categories'])->name('categories');
