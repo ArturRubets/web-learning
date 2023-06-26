@@ -204,3 +204,118 @@ nav ul li a {
     width: 100%;
     z-index: 1;
 }
+
+/* Testimonials Section */
+
+section.testimonials-section {
+    margin: 135px 0;
+}
+
+h2 {
+    color: var(--dark-blue-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 120%;
+    margin: 0 0 16px 0;
+}
+
+h2.light {
+    color: var(--white-color);
+}
+
+section p {
+    color: var(--dark-blue-color);
+    font-size: 16px;
+    line-height: 200%;
+    margin: 0;
+}
+
+.testimonials-section {
+    align-items: center;
+    display: flex;
+    gap: 134px;
+}
+
+.testimonials-section .mobile-btn {
+    display: none;
+}
+
+.testimonials-section .testimonial-card {
+    background: var(--white-color);
+    border-radius: 24px;
+    box-shadow: 0 9px 36px 0 rgba(0, 0, 0, 0.20);
+    margin-bottom: 50px;
+    position: relative;
+    width: 442px;
+}
+
+.testimonials-section .testimonial-card:last-child {
+    transform: translateX(32px);
+}
+
+.testimonials-section .testimonial-card::before {
+    background: var(--dark-blue-color);
+    border-radius: 24px 24px 0 0;
+    content: "";
+    height: 35px; /* The height is equal to the indent top */
+    left: 87px;
+    position: absolute;
+    top: -35px;
+    width: 28px;
+    z-index: -1;
+}
+
+.testimonials-section .testimonial-card:last-child::before {
+    border-radius: 0 0 24px 24px;
+    height: calc(100% + 94px); /* 50px margin + 44px indent */
+    left: 55px; /* 87px indent of the first card - 32px indent of the translateX of the last card */
+    top: -50px; /* Because of the margin-bottom between cards is 50px */
+}
+
+.testimonials-section .testimonial-card .content {
+    background: var(--indigo-color);
+    border-radius: 24px;
+    color: var(--white-color);
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 150%;
+    padding: 24px 32px;
+}
+
+.testimonials-section .testimonial-card:last-child .content {
+    background: var(--orange-color);
+}
+
+.testimonials-section .testimonial-card .info {
+    background: var(--white-color);
+    border-radius: 24px;
+    padding: 31px 32px;
+}
+
+.testimonials-section .testimonial-card .info h4 {
+    color: var(--dark-blue-color);
+    font-family: var(--font-secondary);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 120%;
+    margin: 0;
+}
+
+.testimonials-section .testimonial-card .info p.company {
+    color: var(--dark-blue-color);
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    line-height: 120%;
+}
+
+.testimonials-section .testimonial-card img {
+    bottom: 12px;
+    position: absolute;
+    right: 32px;
+}
+
+.testimonials-section .features {
+    margin-bottom: 30px;
+}
