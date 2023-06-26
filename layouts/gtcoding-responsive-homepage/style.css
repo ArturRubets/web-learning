@@ -1,17 +1,206 @@
 :root {
-    --white-color: #FFFFFF;
-    --indigo-color: #6F7DFB;
-    --blue-color: #26308C;
     --dark-blue-color: #023047;
-    --orange-color: #DA722C;
     --deep-blue-color: #3B448F;
-    --yellow-color: #FFCE31;
-    --black-color: #000000;
-    --turquoise-color: #15C9FB;
-    --royal-blue-color: #1977F3;
     --light-blue-color: #3BCCFF;
-    --green-color: #48FF48;
-    --red-color: #FF3333;
-    --golden-color: #FFD400;
+    --royal-blue-color: #1977F3;
+    --black-color: #000000;
+    --blue-color: #26308C;
     --dark-color: #070917;
+    --golden-color: #FFD400;
+    --green-color: #48FF48;
+    --indigo-color: #6F7DFB;
+    --orange-color: #DA722C;
+    --red-color: #FF3333;
+    --turquoise-color: #15C9FB;
+    --white-color: #FFFFFF;
+    --yellow-color: #FFCE31;
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "Raleway", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    margin: 0;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 1134px;
+}
+
+/* Buttons */
+
+.btn {
+    border-radius: 24px;
+    color: var(--white-color);
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 32px;
+    position: relative;
+    text-decoration: none;
+}
+
+.btn.dark {
+    background: var(--dark-blue-color);
+}
+
+.btn.light {
+    background: var(--orange-color);
+}
+
+.btn.enrol-icon::before {
+    content: url("images/enrol-now-icon.svg");
+    left: 32px;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.btn.enrol-icon {
+    padding-left: 60px;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(180deg, var(--indigo-color) 0%, var(--blue-color) 100%);
+    height: 768px;
+    width: 100%;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 42px;
+    width: 1134px;
+    z-index: 100;
+}
+
+nav .logo {
+    color: var(--white-color);
+    font-family: var(--font-secondary);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Hero Section */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 186px;
+    width: 100%;
+}
+
+.hero-section .left {
+    flex: 1;
+    padding-top: 33px;
+}
+
+.hero-section .left h1 {
+    color: var(--white-color);
+    font-family: var(--font-secondary);
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 125%;
+    margin: 0;
+}
+
+.hero-section .left p {
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 200%;
+    margin-bottom: 30px;
+    margin-top: 18px;
+    width: 457px;
+}
+
+.hero-section .right {
+    align-self: flex-end;
+}
+
+.hero-section .right img {
+    vertical-align: middle;
+}
+
+/* Achievement Cards */
+
+.achievement-card {
+    position: absolute;
+}
+
+.achievement-card.students-enrolled {
+    left: 46%;
+    top: 323px;
+}
+
+.achievement-card.overall-rating {
+    left: 43%;
+    top: 562px;
+}
+
+.achievement-card .content {
+    background: var(--white-color);
+    border-radius: 24px;
+    padding: 7px 34px 18px 33px;
+    position: relative;
+    z-index: 10;
+}
+
+.achievement-card .content div {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+}
+
+.achievement-card h3 {
+    color: var(--dark-blue-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 125%;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.achievement-card p {
+    color: var(--dark-blue-color);
+    font-size: 16px;
+    line-height: 125%;
+    margin: 0;
+}
+
+.achievement-card .bg {
+    background: linear-gradient(180deg, var(--indigo-color) 0%, var(--deep-blue-color) 100%);
+    border-radius: 24px;
+    height: 100%;
+    left: 7px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    z-index: 1;
 }
