@@ -319,3 +319,91 @@ section p {
 .testimonials-section .features {
     margin-bottom: 30px;
 }
+
+/* Courses Section */
+
+.courses-section {
+    background: linear-gradient(180deg, var(--indigo-color) 0%, var(--blue-color) 100%);
+    padding: 70px 0 129px 0; /* The "All Courses" button is not displayed in the stream, so we add an additional indent from the bottom */
+}
+
+.courses-section h2 {
+    text-align: center;
+}
+
+.courses-section .course-cards {
+    display: flex;
+    gap: 73px;
+}
+
+.courses-section .course-cards img {
+    border-radius: 24px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+    width: 100%;
+}
+
+.courses-section .course-card {
+    background: var(--white-color);
+    border-radius: 24px;
+    margin: 40px 0;
+    max-width: 526px;
+    padding: 0 32px;
+    position: relative;
+}
+
+.courses-section .course-card::after {
+    background: var(--dark-blue-color);
+    border-radius: 24px;
+    bottom: 0;
+    content: "";
+    height: 8px;
+    left: 32px;
+    position: absolute;
+    right: 32px;
+}
+
+.courses-section .course-card h3 {
+    color: var(--dark-blue-color);
+    font-family: var(--font-secondary);
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 150%;
+    margin: 0;
+}
+
+.courses-section .course-card .info {
+    align-items: flex-start;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    margin: 30px 0;
+    min-height: 90px;
+}
+
+.courses-section .course-card .duration {
+    align-self: center;
+    color: var(--dark-blue-color);
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 150%;
+    padding-left: 25px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.courses-section .course-card .duration::before {
+    content: url("images/clock.svg");
+    left: 0;
+    position: absolute;
+    top: 2px;
+}
+
+.courses-section .wrapper {
+    position: relative;
+}
+
+.courses-section .wrapper .btn {
+    position: absolute;
+    right: 0;
+}
