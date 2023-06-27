@@ -1,19 +1,12 @@
 :root {
     --dark-blue-color: #023047;
     --deep-blue-color: #3B448F;
-    --light-blue-color: #3BCCFF;
-    --royal-blue-color: #1977F3;
     --black-color: #000000;
     --blue-color: #26308C;
     --dark-color: #070917;
-    --golden-color: #FFD400;
-    --green-color: #48FF48;
     --indigo-color: #6F7DFB;
     --orange-color: #DA722C;
-    --red-color: #FF3333;
-    --turquoise-color: #15C9FB;
     --white-color: #FFFFFF;
-    --yellow-color: #FFCE31;
     --font-primary: "Poppins", sans-serif;
     --font-secondary: "Raleway", sans-serif;
 }
@@ -27,6 +20,7 @@
 body {
     font-family: var(--font-primary);
     margin: 0;
+    min-width: 380px;
 }
 
 .wrapper {
@@ -120,6 +114,7 @@ nav ul li a {
 /* Hero Section */
 
 .hero-section {
+    color: var(--white-color);
     display: flex;
     justify-content: space-between;
     padding-top: 186px;
@@ -132,7 +127,6 @@ nav ul li a {
 }
 
 .hero-section .left h1 {
-    color: var(--white-color);
     font-family: var(--font-secondary);
     font-size: 50px;
     font-weight: 900;
@@ -141,7 +135,6 @@ nav ul li a {
 }
 
 .hero-section .left p {
-    color: var(--white-color);
     font-size: 16px;
     line-height: 200%;
     margin-bottom: 30px;
@@ -160,6 +153,7 @@ nav ul li a {
 /* Achievement Cards */
 
 .achievement-card {
+    color: var(--dark-blue-color);
     position: absolute;
 }
 
@@ -188,20 +182,25 @@ nav ul li a {
 }
 
 .achievement-card h3 {
-    color: var(--dark-blue-color);
+    flex: 1;
     font-size: 36px;
     font-weight: 700;
     line-height: 125%;
     margin: 0;
     text-align: center;
-    width: 100%;
+}
+
+.achievement-card img {
+    flex: 1;
+    height: 44px;
+    width: 44px;
 }
 
 .achievement-card p {
-    color: var(--dark-blue-color);
     font-size: 16px;
     line-height: 125%;
     margin: 0;
+    text-align: center;
 }
 
 .achievement-card .bg {
@@ -510,9 +509,10 @@ footer form input {
     background: var(--white-color);
     border: none;
     border-radius: 8px;
+    font-family: var(--font-primary);
     font-size: 16px;
     line-height: 200%;
-    padding: 4px 27px;
+    padding: 4px 168px 4px 27px;
     width: 100%;
 }
 
@@ -526,6 +526,7 @@ footer form .submit-btn {
     border-radius: 8px;
     color: var(--white-color);
     cursor: pointer;
+    font-family: var(--font-primary);
     font-size: 16px;
     line-height: 200%;
     padding: 0 27px;
@@ -533,6 +534,7 @@ footer form .submit-btn {
     right: 6px;
     top: 50%;
     transform: translateY(-50%);
+    width: 135px;
 }
 
 footer .copyright {
@@ -546,7 +548,7 @@ nav.mobile-nav,
 
 @media (max-width: 1200px) {
     .btn {
-        font-size: 16px;
+        font-size: 16px !important;
         padding: 12px 32px;
     }
 
@@ -876,6 +878,10 @@ nav.mobile-nav,
         gap: 40px;
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    footer form input {
+        padding: 3px 30px;
     }
 
     footer .links-container .links:last-child {
