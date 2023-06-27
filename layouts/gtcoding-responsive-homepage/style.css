@@ -32,6 +32,7 @@ body {
 .wrapper {
     margin: auto;
     max-width: 1134px;
+    position: relative;
 }
 
 /* Buttons */
@@ -71,7 +72,6 @@ body {
 
 header {
     background: linear-gradient(180deg, var(--indigo-color) 0%, var(--blue-color) 100%);
-    height: 768px;
     width: 100%;
 }
 
@@ -79,10 +79,20 @@ nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    max-width: 1134px;
+    padding: 42px 12px;
     position: fixed;
-    top: 42px;
-    width: 1134px;
+    top: 0;
+    transition: all 500ms ease;
+    width: 100%;
     z-index: 100;
+}
+
+nav.scrolled {
+    background: var(--dark-color);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+    padding: 12px;
 }
 
 nav .logo {
@@ -526,4 +536,55 @@ footer form .submit-btn {
 
 footer .copyright {
     margin: 32px 0 0 0;
+}
+
+@media (max-width: 1200px) {
+    .btn {
+        font-size: 16px;
+        padding: 12px 32px;
+    }
+
+    .wrapper {
+        padding: 0 100px;
+    }
+
+    nav {
+        left: 0;
+        padding: 60px;
+        right: 0;
+    }
+
+    nav.scrolled {
+        padding: 16px 60px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-section .left {
+        padding: 77px 0 615px 0;
+    }
+
+    .hero-section .right {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+    }
+
+    .hero-section .right img {
+        width: 496px;
+    }
+
+    .achievement-card.students-enrolled {
+        bottom: 341px;
+        left: 17%;
+        top: unset;
+    }
+
+    .achievement-card.overall-rating {
+        bottom: 125px;
+        left: 17%;
+        top: unset;
+    }
 }
