@@ -407,3 +407,123 @@ section p {
     position: absolute;
     right: 0;
 }
+
+/* App Section */
+
+.app-section {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.app-section h2 {
+    margin-bottom: 13px;
+}
+
+.app-section .app-buttons {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.app-section .app-btn {
+    align-items: center;
+    background: var(--black-color);
+    color: var(--white-color);
+    display: flex;
+    gap: 14px;
+    min-width: 310px;
+    padding: 20px 31px;
+}
+
+.app-section .app-btn span {
+    color: var(--white-color);
+    font-size: 24px;
+    line-height: 200%;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background: var(--dark-color);
+    color: var(--white-color);
+    padding: 70px 0;
+}
+
+footer a {
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 200%;
+    text-decoration: none;
+}
+
+footer h3 {
+    color: var(--orange-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 200%;
+    margin: 0 0 14px 0;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0 0 0 23px;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 0 9px 0;
+}
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3.5fr;
+}
+
+footer .social {
+    padding: 7px 0 0 23px;
+}
+
+footer .social a {
+    margin-right: 28px;
+}
+
+footer form {
+    margin: 26px 0 0 23px;
+    position: relative;
+}
+
+footer form input {
+    background: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 200%;
+    padding: 4px 27px;
+    width: 100%;
+}
+
+footer form input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+footer form .submit-btn {
+    background: var(--dark-blue-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--white-color);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 200%;
+    padding: 0 27px;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer .copyright {
+    margin: 32px 0 0 0;
+}
