@@ -164,6 +164,7 @@ body {
 }
 .top-slider {
   background: rgba(33, 33, 33, 0.5);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   /* Dots */
 }
 .top-slider__item {
@@ -224,6 +225,7 @@ body {
 
 @media (min-width: 640px) {
   .top-slider {
+    box-shadow: none;
     /* Dots */
     /* Arrows */
   }
