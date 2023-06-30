@@ -21,16 +21,4 @@
   font-weight: bold;
   font-style: normal;
   src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: "Dosis-Light";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/Dosis-Light.woff2") format("woff2"), url("../fonts/Dosis-Light.woff") format("woff");
-}
-@font-face {
-  font-family: "Dosis-Bold";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/Dosis-Bold.woff2") format("woff2"), url("../fonts/Dosis-Bold.woff") format("woff");
 }/*# sourceMappingURL=fonts.css.map */
