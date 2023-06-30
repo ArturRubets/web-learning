@@ -266,9 +266,10 @@ body {
   }
   .top-slider .arrow-right,
   .top-slider .arrow-left {
-    border-left: 4px solid;
-    border-top: 4px solid;
+    border-left: 4px solid #fff;
+    border-top: 4px solid #fff;
     box-sizing: border-box;
+    display: block;
     height: 14px;
     margin: 0 auto;
     width: 14px;
@@ -278,7 +279,6 @@ body {
     transform: translateX(-3px) rotate(135deg);
   }
   .top-slider .arrow-left {
-    border-color: #fff;
     transform: translateX(3px) rotate(-45deg);
   }
 }
