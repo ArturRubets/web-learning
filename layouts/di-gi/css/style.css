@@ -3,6 +3,11 @@
   font-weight: 500;
 }
 
+.top-slider__text, .top-slider__title {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: normal;
+}
+
 @font-face {
   font-family: "Roboto-Regular";
   font-weight: normal;
@@ -44,9 +49,9 @@ li {
 }
 
 button {
-  padding: 0;
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 
 p {
@@ -168,8 +173,6 @@ body {
   min-height: 193px;
 }
 .top-slider__title {
-  font-family: "RobotoCondensed-Regular";
-  font-weight: normal;
   line-height: 28px;
   font-size: 28px;
   text-transform: uppercase;
@@ -272,11 +275,11 @@ body {
   }
   .top-slider .arrow-right {
     border-color: #929292;
-    transform: rotate(135deg);
+    transform: translateX(-3px) rotate(135deg);
   }
   .top-slider .arrow-left {
     border-color: #fff;
-    transform: rotate(-45deg);
+    transform: translateX(3px) rotate(-45deg);
   }
 }
 @media (min-width: 768px) {
@@ -293,8 +296,6 @@ body {
   .top-slider__text {
     display: block;
     padding: 31px 0 32px;
-    font-family: "RobotoCondensed-Regular";
-    font-weight: normal;
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -351,6 +352,12 @@ body {
   .top-slider .arrow-left {
     height: 18px;
     width: 18px;
+  }
+  .top-slider .arrow-right {
+    transform: translateX(-5px) rotate(135deg);
+  }
+  .top-slider .arrow-left {
+    transform: translateX(5px) rotate(-45deg);
   }
 }
 .call {
