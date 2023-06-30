@@ -209,11 +209,11 @@ body {
 }
 .top-slider .slick-dots .slick-active button {
   background-color: transparent;
-  border: 1px solid #476e4d;
+  border: 1px solid #fff;
 }
 .top-slider .slick-dots button {
   font-size: 0;
-  background-color: #2b4074;
+  background-color: #fff;
   width: 10px;
   height: 10px;
   border-radius: 50%;
