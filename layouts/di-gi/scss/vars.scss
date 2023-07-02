@@ -2,18 +2,19 @@ $accent: #2b4074;
 $arrow-color: #929292;
 $bg-color: #f9f6e5;
 $text-color: #4a4a4a;
+$default-color: #9b9b9b;
 
 %roboto-500 {
   font-family: "Roboto-Medium";
   font-weight: 500;
 }
 
-%robotoCondensed-normal {
+%roboto-condensed-400 {
   font-family: "RobotoCondensed-Regular";
   font-weight: normal;
 }
 
-%robotoCondensed-bold {
+%roboto-condensed-700 {
   font-family: "RobotoCondensed-Bold";
   font-weight: bold;
 }
