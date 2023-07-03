@@ -3,12 +3,12 @@
   font-weight: 500;
 }
 
-.top-slider__text, .top-slider__title, .title {
+.testimonial__slider-text, .top-slider__text, .top-slider__title, .title {
   font-family: "RobotoCondensed-Regular";
   font-weight: normal;
 }
 
-.news__item-link, .project__item-link, .services__item-link, .services__item-title {
+.testimonial__slider-author, .testimonial__slider-link, .news__item-link, .project__item-link, .services__item-link, .services__item-title {
   font-family: "RobotoCondensed-Bold";
   font-weight: bold;
 }
@@ -1033,6 +1033,9 @@ a {
   .news {
     padding: 52px 0 80px;
   }
+  .news__inner {
+    margin: 0 52px;
+  }
   .news__title {
     margin-bottom: 115px;
   }
@@ -1042,6 +1045,93 @@ a {
   }
   .news__item-link {
     font-size: 16px;
+  }
+}
+.testimonial {
+  text-align: center;
+  padding: 60px 0 85px;
+  /* Dots */
+}
+.testimonial__icon {
+  margin-bottom: 90px;
+}
+.testimonial__slider-text {
+  color: #4a4a4a;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.testimonial__slider-link {
+  color: #2b4074;
+}
+.testimonial__slider-author {
+  color: #4a4a4a;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.testimonial .slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.testimonial .slick-dots .slick-active button {
+  background-color: #fff;
+}
+.testimonial .slick-dots button {
+  font-size: 0;
+  background-color: #2b4074;
+  border: 1px solid #2b4074;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+@media (min-width: 640px) {
+  .testimonial {
+    padding: 60px 0 91px;
+  }
+  .testimonial__icon {
+    margin-bottom: 40px;
+  }
+  .testimonial__slider-text {
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonial {
+    padding: 100px 0 131px;
+  }
+  .testimonial__icon {
+    margin-bottom: 44px;
+  }
+  .testimonial__slider-text {
+    line-height: normal;
+    margin-bottom: 45px;
+  }
+  .testimonial__slider-author {
+    line-height: 28px;
+    margin-bottom: 90px;
+  }
+}
+@media (min-width: 1440px) {
+  .testimonial__icon {
+    margin-bottom: 54px;
+  }
+  .testimonial__slider-text {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .testimonial__slider-author {
+    font-size: 24px;
+    line-height: normal;
   }
 }
 
