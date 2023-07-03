@@ -83,6 +83,7 @@ a {
   line-height: normal;
   padding-bottom: 28px;
   position: relative;
+  text-transform: capitalize;
   &::after {
     content: "";
     position: absolute;

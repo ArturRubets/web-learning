@@ -119,6 +119,7 @@ a {
   line-height: normal;
   padding-bottom: 28px;
   position: relative;
+  text-transform: capitalize;
 }
 .title::after {
   content: "";
