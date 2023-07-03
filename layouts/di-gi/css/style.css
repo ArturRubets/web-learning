@@ -1,4 +1,4 @@
-.call__btn, .call__title {
+.team__btn, .call__btn, .call__title {
   font-family: "Roboto-Medium";
   font-weight: 500;
 }
@@ -8,7 +8,7 @@
   font-weight: normal;
 }
 
-.services__item-link, .services__item-title {
+.project__item-link, .services__item-link, .services__item-title {
   font-family: "RobotoCondensed-Bold";
   font-weight: bold;
 }
@@ -136,6 +136,9 @@ a {
   .title {
     font-size: 48px;
     line-height: 56px;
+  }
+  .title::after {
+    width: 100px;
   }
 }
 /* Header Section */
@@ -508,7 +511,7 @@ a {
   min-height: 277px;
 }
 .services__item-inner {
-  transition: all 0.5s;
+  transition: margin 0.5s;
 }
 .services__item-img {
   margin-bottom: 30px;
@@ -680,6 +683,226 @@ a {
   }
   .services__item:hover .services__item-inner {
     padding: 25px 9px 5px;
+  }
+}
+.project {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+}
+.project__title {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.project__title::after {
+  background-color: #fff;
+}
+.project__item-img {
+  min-height: 250px;
+  border-radius: 4px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project__item-img:hover .project__item-inner {
+  opacity: 1;
+}
+.project__item-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(249, 246, 229, 0.83);
+  border-radius: 4px;
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  top: 12px;
+  bottom: 12px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.project__item-info, .project__item-search {
+  margin: 0 7px;
+}
+.project__item-link {
+  display: block;
+  padding: 20px 0;
+  color: #2b4074;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 640px) {
+  .project {
+    padding: 40px 0 20px;
+  }
+  .project__item-img {
+    min-height: 460px;
+  }
+  .project__item-inner {
+    left: 25px;
+    right: 25px;
+    top: 21px;
+    bottom: 21px;
+  }
+  .project__item-link {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .project {
+    padding: 80px 0 50px;
+  }
+  .project__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 28px;
+  }
+  .project__item-img {
+    min-height: 283px;
+    width: 317px;
+  }
+  .project__item-inner {
+    left: 14px;
+    right: 14px;
+    top: 13px;
+    bottom: 13px;
+  }
+  .project__item-link {
+    padding: 30px 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  .project {
+    padding: 80px 0 80px;
+  }
+  .project__item-link {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .project__items {
+    justify-content: space-between;
+    gap: 0 21px;
+    margin: 0 52px;
+  }
+  .project__item-img {
+    width: 268px;
+    height: 239px;
+  }
+}
+.team {
+  padding: 20px 0 40px;
+  text-align: center;
+}
+.team__image {
+  width: 100%;
+  margin-bottom: 43px;
+  border-radius: 4px;
+}
+.team__title {
+  color: #4a4a4a;
+  margin-bottom: 23px;
+}
+.team__text {
+  margin-bottom: 84px;
+}
+.team__btn {
+  background-color: #2b4074;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 21px 26px;
+  color: #f9f6e5;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+@media (min-width: 640px) {
+  .team {
+    padding: 46px 0 53px;
+  }
+  .team__image {
+    margin-bottom: 46px;
+  }
+  .team__title {
+    margin-bottom: 40px;
+  }
+  .team__text {
+    margin-bottom: 56px;
+  }
+}
+@media (min-width: 768px) {
+  .team {
+    padding: 40px 0 48px;
+    text-align: left;
+  }
+  .team__inner {
+    display: flex;
+    gap: 34px;
+  }
+  .team__image {
+    margin-bottom: 0;
+    width: 240px;
+    height: 227px;
+  }
+  .team__title {
+    margin-bottom: 7px;
+    font-size: 36px;
+    line-height: 38px;
+  }
+  .team__title::after {
+    margin-left: 0;
+  }
+  .team__text {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .team__btn {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .team {
+    padding: 80px 0;
+  }
+  .team__inner {
+    gap: 60px;
+  }
+  .team__image {
+    width: 395px;
+    height: 380px;
+  }
+  .team__title {
+    margin: 20px 0 19px;
+    font-size: 48px;
+    line-height: normal;
+  }
+  .team__text {
+    margin-bottom: 19px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1440px) {
+  .team {
+    padding: 50px 0 110px;
+  }
+  .team__inner {
+    gap: 100px;
+  }
+  .team__image {
+    width: 460px;
+    height: 420px;
+  }
+  .team__title {
+    margin: 0 0 39px;
+  }
+  .team__text {
+    margin-bottom: 39px;
+    width: 585px;
   }
 }
 
