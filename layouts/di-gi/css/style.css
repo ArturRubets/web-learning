@@ -892,6 +892,7 @@ a {
   }
   .team__inner {
     gap: 100px;
+    margin: 0 52px;
   }
   .team__image {
     width: 460px;
