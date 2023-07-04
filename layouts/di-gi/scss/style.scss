@@ -932,8 +932,11 @@
 .testimonial {
   text-align: center;
   padding: 60px 0 85px;
+  &__slider-item {
+    padding: 0 20px;
+  }
   &__icon {
-    margin-bottom: 90px;
+    margin: 0 auto 90px;
   }
   &__slider-text {
     color: $text-color;
@@ -964,12 +967,12 @@
     right: 0;
     .slick-active {
       button {
-        background-color: #fff;
+        background-color: $accent;
       }
     }
     button {
       font-size: 0;
-      background-color: $accent;
+      background-color: #fff;
       border: 1px solid $accent;
       width: 10px;
       height: 10px;
@@ -981,6 +984,9 @@
 @media (min-width: 640px) {
   .testimonial {
     padding: 60px 0 91px;
+    &__slider-item {
+      padding: 0 35px;
+    }
     &__icon {
       margin-bottom: 40px;
     }
@@ -991,9 +997,19 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .testimonial {
+    &__slider-item {
+      padding: 0 41px;
+    }
+  }
+}
 @media (min-width: 1024px) {
   .testimonial {
     padding: 100px 0 131px;
+    &__slider-item {
+      padding: 0 15px;
+    }
     &__icon {
       margin-bottom: 44px;
     }
