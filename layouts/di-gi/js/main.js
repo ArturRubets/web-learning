@@ -16,11 +16,21 @@ $(function () {
       },
     ],
   });
+
   $(".testimonial__slider").slick({
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: false,
     prevArrow: false,
+  });
+
+  $(".news__items").masonry({
+    itemSelector: ".news__item",
+    columnWidth: 270,
+    gutter: 30,
+    horizontalOrder: true,
+    transitionDuration: "0.5s",
+    fitWidth: true,
   });
 });

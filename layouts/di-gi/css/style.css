@@ -918,8 +918,6 @@ a {
   margin-bottom: 40px;
 }
 .news__items {
-  columns: 1 auto;
-  max-width: 270px;
   margin: 0 auto;
 }
 .news__item {
@@ -1000,11 +998,6 @@ a {
   .news__title {
     margin-bottom: 60px;
   }
-  .news__items {
-    columns: 2 auto;
-    max-width: 570px;
-    column-gap: 30px;
-  }
   .news__item {
     margin-bottom: 30px;
   }
@@ -1024,24 +1017,13 @@ a {
     line-height: normal;
     margin-bottom: 96px;
   }
-  .news__items {
-    columns: 3 auto;
-    max-width: 871px;
-  }
 }
 @media (min-width: 1440px) {
   .news {
     padding: 52px 0 80px;
   }
-  .news__inner {
-    margin: 0 52px;
-  }
   .news__title {
     margin-bottom: 115px;
-  }
-  .news__items {
-    columns: 4 auto;
-    max-width: 1171px;
   }
   .news__item-link {
     font-size: 16px;
