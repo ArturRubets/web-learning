@@ -832,7 +832,8 @@ a {
     margin-bottom: 40px;
   }
   .team__text {
-    margin-bottom: 56px;
+    margin: 0 auto 56px;
+    max-width: 518px;
   }
 }
 @media (min-width: 768px) {
@@ -843,6 +844,7 @@ a {
   .team__inner {
     display: flex;
     gap: 34px;
+    justify-content: center;
   }
   .team__image {
     margin-bottom: 0;
@@ -858,7 +860,8 @@ a {
     margin-left: 0;
   }
   .team__text {
-    margin-bottom: 30px;
+    margin: 0 0 30px;
+    max-width: 407px;
     font-size: 18px;
     line-height: 18px;
   }
@@ -883,8 +886,9 @@ a {
     line-height: normal;
   }
   .team__text {
-    margin-bottom: 19px;
+    margin: 0 0 19px;
     line-height: 24px;
+    max-width: 523px;
   }
 }
 @media (min-width: 1440px) {
@@ -903,8 +907,8 @@ a {
     margin: 0 0 39px;
   }
   .team__text {
-    margin-bottom: 39px;
-    width: 585px;
+    margin: 0 0 39px;
+    max-width: 585px;
   }
 }
 .news {

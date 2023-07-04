@@ -723,7 +723,8 @@
       margin-bottom: 40px;
     }
     &__text {
-      margin-bottom: 56px;
+      margin: 0 auto 56px;
+      max-width: 518px;
     }
   }
 }
@@ -734,6 +735,7 @@
     &__inner {
       display: flex;
       gap: 34px;
+      justify-content: center;
     }
     &__image {
       margin-bottom: 0;
@@ -749,7 +751,8 @@
       }
     }
     &__text {
-      margin-bottom: 30px;
+      margin: 0 0 30px;
+      max-width: 407px;
       font-size: 18px;
       line-height: 18px;
     }
@@ -774,8 +777,9 @@
       line-height: normal;
     }
     &__text {
-      margin-bottom: 19px;
+      margin: 0 0 19px;
       line-height: 24px;
+      max-width: 523px;
     }
   }
 }
@@ -794,8 +798,8 @@
       margin: 0 0 39px;
     }
     &__text {
-      margin-bottom: 39px;
-      width: 585px;
+      margin: 0 0 39px;
+      max-width: 585px;
     }
   }
 }
