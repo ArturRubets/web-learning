@@ -215,8 +215,13 @@
                 <a class="project__item-info" href="#">
                   <img src="images/info-blue.svg" alt="пошук" />
                 </a>
-                <a class="project__item-search" href="#">
-                  <img src="images/search.svg" alt="інформація" />
+                <a class="project__item-gallery" href="#">
+                  <img
+                    class="project__item-gallery__icon"
+                    src="images/search.svg"
+                    alt="показати галерею"
+                    data-index-number="1"
+                  />
                 </a>
               </div>
             </div>
@@ -231,8 +236,13 @@
                 <a class="project__item-info" href="#">
                   <img src="images/info-blue.svg" alt="пошук" />
                 </a>
-                <a class="project__item-search" href="#">
-                  <img src="images/search.svg" alt="інформація" />
+                <a class="project__item-gallery" href="#">
+                  <img
+                    class="project__item-gallery__icon"
+                    src="images/search.svg"
+                    alt="показати галерею"
+                    data-index-number="2"
+                  />
                 </a>
               </div>
             </div>
@@ -247,8 +257,13 @@
                 <a class="project__item-info" href="#">
                   <img src="images/info-blue.svg" alt="пошук" />
                 </a>
-                <a class="project__item-search" href="#">
-                  <img src="images/search.svg" alt="інформація" />
+                <a class="project__item-gallery" href="#">
+                  <img
+                    class="project__item-gallery__icon"
+                    src="images/search.svg"
+                    alt="показати галерею"
+                    data-index-number="3"
+                  />
                 </a>
               </div>
             </div>
@@ -263,8 +278,13 @@
                 <a class="project__item-info" href="#">
                   <img src="images/info-blue.svg" alt="пошук" />
                 </a>
-                <a class="project__item-search" href="#">
-                  <img src="images/search.svg" alt="інформація" />
+                <a class="project__item-gallery" href="#">
+                  <img
+                    class="project__item-gallery__icon"
+                    src="images/search.svg"
+                    alt="показати галерею"
+                    data-index-number="4"
+                  />
                 </a>
               </div>
             </div>
@@ -585,13 +605,64 @@
         </div>
       </div>
     </footer>
+
+    <!-- The Modal/Lightbox -->
+    <div class="modal">
+      <div class="modal__content">
+        <div class="modal__slide-inner">
+          <div class="modal__slide">
+            <div class="modal__number-text">1 / 4</div>
+            <img
+              class="modal__image"
+              src="images/project-1.jpg"
+              alt="Lalique бутік"
+            />
+          </div>
+          <div class="modal__slide">
+            <div class="modal__number-text">2 / 4</div>
+            <img
+              class="modal__image"
+              src="images/project-2.jpg"
+              alt="Будівництво будинків"
+            />
+          </div>
+          <div class="modal__slide">
+            <div class="modal__number-text">3 / 4</div>
+            <img
+              class="modal__image"
+              src="images/project-3.jpg"
+              alt="Кав'ярня"
+            />
+          </div>
+          <div class="modal__slide">
+            <div class="modal__number-text">4 / 4</div>
+            <img
+              class="modal__image"
+              src="images/project-4.jpg"
+              alt="Унікальні тури"
+            />
+          </div>
+        </div>
+        <div class="modal__controls">
+          <!-- Caption text -->
+          <div class="modal__caption">
+            <p class="modal__caption-content"></p>
+          </div>
+          <!-- Next/previous controls -->
+          <a class="modal__prev">&#10094;</a>
+          <a class="modal__next">&#10095;</a>
+        </div>
+        <span class="modal__close">&times;</span>
+      </div>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js"></script>
     <script src="libs/slick/slick.min.js"></script>
     <script src="libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
