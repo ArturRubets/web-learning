@@ -16,6 +16,12 @@ $xxl: 1400px;
 
 $font-family: "Inter", sans-serif;
 
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
 body {
   font-family: $font-family;
   font-weight: 400;
@@ -94,6 +100,93 @@ body {
       &:first-child {
         margin-right: 20px;
       }
+    }
+  }
+}
+
+.hero {
+  background-color: $primary;
+  padding: calc(4rem - 30px) 0 8rem 0;
+  @media (min-width: $lg) {
+    padding: calc(8rem - 30px) 0 8rem 0;
+  }
+  .intro-excerpt {
+    max-width: 450px;
+    position: relative;
+    z-index: 4;
+  }
+  h1 {
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 30px;
+    @media (min-width: $xxl) {
+      font-size: 54px;
+    }
+  }
+  p {
+    color: rgba($color: $white, $alpha: 0.5);
+    margin-bottom: 30px;
+  }
+  .hero-img-wrap {
+    position: relative;
+    img {
+      position: absolute;
+      top: -80px;
+      z-index: 2;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 176px;
+      background-image: url("../images/dots-light.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      right: 0;
+    }
+  }
+}
+
+.btn {
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: $white;
+  background-color: $dark;
+  border-color: $dark;
+  &:hover {
+    color: $white;
+    background-color: darken($color: $dark, $amount: 5%);
+    border-color: darken($color: $dark, $amount: 5%);
+  }
+  &:active,
+  &:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+  &.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    &:hover {
+      background-color: darken($color: $primary, $amount: 5%);
+      border-color: darken($color: $primary, $amount: 5%);
+    }
+  }
+  &.btn-secondary {
+    color: $dark;
+    background-color: $secondary;
+    border-color: $secondary;
+    &:hover {
+      background-color: darken($color: $secondary, $amount: 5%);
+      border-color: darken($color: $secondary, $amount: 5%);
+    }
+  }
+  &.btn-outline-light {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: rgba($color: $white, $alpha: 0.3);
+    &:hover {
+      border-color: $white;
     }
   }
 }
