@@ -1375,3 +1375,39 @@
     }
   }
 }
+
+.tooltip {
+  position: relative;
+  &__text {
+    visibility: hidden;
+    width: 200px;
+    background-color: $accent;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 1s;
+    @extend %roboto-condensed-700;
+    line-height: normal;
+  }
+  &:hover &__text {
+    visibility: visible;
+    opacity: 1;
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $accent transparent transparent transparent;
+    }
+  }
+}

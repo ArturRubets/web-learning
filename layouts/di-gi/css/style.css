@@ -8,7 +8,7 @@
   font-weight: normal;
 }
 
-.footer__item-head, .testimonial__slider-author, .testimonial__slider-link, .news__item-link, .project__item-link, .services__item-link, .services__item-title {
+.tooltip__text, .footer__item-head, .testimonial__slider-author, .testimonial__slider-link, .news__item-link, .project__item-link, .services__item-link, .services__item-title {
   font-family: "RobotoCondensed-Bold";
   font-weight: bold;
 }
@@ -1451,6 +1451,40 @@ a {
   .modal__next {
     right: 20px;
   }
+}
+.tooltip {
+  position: relative;
+}
+.tooltip__text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #2b4074;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 1s;
+  line-height: normal;
+}
+.tooltip:hover .tooltip__text {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip:hover .tooltip__text::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #2b4074 transparent transparent transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
