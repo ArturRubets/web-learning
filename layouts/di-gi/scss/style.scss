@@ -612,8 +612,8 @@
     gap: 7px;
   }
   &__item-link {
-    display: block;
-    padding: 20px 0;
+    display: inline-block;
+    margin: 20px 0;
     color: $accent;
     font-size: 16px;
     @extend %roboto-condensed-700;
@@ -658,7 +658,7 @@
       bottom: 13px;
     }
     &__item-link {
-      padding: 30px 0 0;
+      margin: 30px 0 0;
     }
   }
 }
