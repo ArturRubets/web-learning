@@ -413,3 +413,44 @@ body {
     }
   }
 }
+
+.popular-product {
+  padding: 0 0 7rem 0;
+  .product-item {
+    h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: $dark;
+    }
+    a {
+      text-decoration: none;
+      color: $dark;
+      transition: all 0.3 ease;
+      &:hover {
+        color: rgba($color: $dark, $alpha: 0.5);
+      }
+    }
+    p {
+      line-height: 1.4;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .thumbnail {
+      margin-right: 10px;
+      flex: 0 0 120px;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        border-radius: 20px;
+        background-color: $light;
+        width: 98px;
+        height: 98px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+    }
+  }
+}
