@@ -32,6 +32,19 @@ body {
   background-color: $lighter;
 }
 
+a {
+  transition: all 0.3 ease;
+  color: $dark;
+  text-decoration: underline;
+  &:hover {
+    color: $dark;
+    text-decoration: none;
+  }
+  &.more {
+    font-weight: 600;
+  }
+}
+
 .custom-navbar {
   background-color: $primary !important;
   padding: 20px 0;
@@ -559,6 +572,42 @@ body {
       &.tns-nav-active {
         &::before {
           background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+// Blog Section
+.blog-section {
+  padding: 7rem 0 12rem 0;
+  .post-entry {
+    a {
+      text-decoration: none;
+    }
+    .post-thumbnail {
+      display: block;
+      margin-bottom: 20px;
+      img {
+        border-radius: 20px;
+        transition: all 0.3 ease;
+        &:hover,
+        &:focus {
+          opacity: 0.7;
+        }
+      }
+    }
+    .post-content-entry {
+      padding: 0 15px;
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 7px;
+      }
+      .meta {
+        font-size: 14px;
+        a {
+          font-weight: 600;
         }
       }
     }
