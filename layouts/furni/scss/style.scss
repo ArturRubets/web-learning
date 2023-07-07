@@ -33,7 +33,7 @@ body {
 }
 
 a {
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
   color: $dark;
   text-decoration: underline;
   &:hover {
@@ -73,7 +73,7 @@ a {
         font-weight: 500;
         color: #fff;
         opacity: 0.5;
-        transition: all 0.3 ease;
+        transition: all 0.3s ease;
         position: relative;
         &:before {
           @media (min-width: $md) {
@@ -273,7 +273,7 @@ a {
       border-radius: 50%;
       opacity: 0;
       visibility: hidden;
-      transition: all 0.3 ease;
+      transition: all 0.3s ease;
       img {
         position: absolute;
         left: 50%;
@@ -441,7 +441,7 @@ a {
     a {
       text-decoration: none;
       color: $dark;
-      transition: all 0.3 ease;
+      transition: all 0.3s ease;
       &:hover {
         color: rgba($color: $dark, $alpha: 0.5);
       }
@@ -523,7 +523,7 @@ a {
       border-radius: 50%;
       background: rgba($primary, 0.1);
       color: $dark;
-      transition: all 0.3 ease;
+      transition: all 0.3s ease;
       &:hover {
         background-color: $primary;
         color: $white;
@@ -565,7 +565,7 @@ a {
         position: absolute;
         content: "";
         border-radius: 50%;
-        transition: all 0.3 ease;
+        transition: all 0.3s ease;
         background-color: darken($color: #efefef, $amount: 10%);
       }
       &:hover,
@@ -590,7 +590,7 @@ a {
       margin-bottom: 20px;
       img {
         border-radius: 20px;
-        transition: all 0.3 ease;
+        transition: all 0.3s ease;
         &:hover,
         &:focus {
           opacity: 0.7;
@@ -610,6 +610,114 @@ a {
           font-weight: 600;
         }
       }
+    }
+  }
+}
+
+// Footer Section
+.footer-section {
+  padding: 80px 0;
+  background-color: $white;
+  a {
+    text-decoration: none;
+    color: $dark;
+    transition: all 0.3s ease;
+    &:hover {
+      color: rgba($color: $dark, $alpha: 0.5);
+    }
+  }
+  .subscription-form {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+    @media (min-width: $lg) {
+      margin: 0 0 80px 0;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: $primary;
+    }
+    .form-control {
+      height: 50px;
+      border-radius: 10px;
+      font-family: $font-family;
+      &:active,
+      &:focus {
+        outline: none;
+        border-color: $primary;
+        box-shadow: 0 1px 4px 0 rgba($color: $black, $alpha: 0.2);
+      }
+      &::-webkit-input-placeholder {
+        font-size: 14px;
+      }
+      &::-moz-placeholder {
+        font-size: 14px;
+      }
+      &:-ms-input-placeholder {
+        font-size: 14px;
+      }
+      &:-moz-placeholder {
+        font-size: 14px;
+      }
+    }
+    .btn {
+      border-radius: 10px !important;
+    }
+  }
+  .sofa-img {
+    position: absolute;
+    top: -200px;
+    z-index: 1;
+    right: 0;
+    img {
+      max-width: 380px;
+    }
+  }
+  .links-wrap {
+    margin-top: 0;
+    @media (min-width: $lg) {
+      margin-top: 54px;
+    }
+    ul {
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .footer-logo-wrap {
+    .footer-logo {
+      font-size: 32px;
+      font-weight: 500;
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+  .custom-social {
+    li {
+      margin: 2px;
+      display: inline-block;
+      a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+        background-color: $light;
+        color: $primary;
+        border-radius: 50%;
+        &:hover {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+  .border-top {
+    border-color: $light;
+    &.copyright {
+      font-size: 13px;
     }
   }
 }
