@@ -13,3 +13,8 @@ The design files for this project can be found in the following Figma link:
 The website implementation can be accessed through the following link:
 
 [Website](https://furnioasis.netlify.app/)
+
+### Technologies Used
+
+- Tiny Slider: A lightweight and responsive slider library used for creating dynamic sliders and carousels.
+- Bootstrap 5: A popular CSS framework used for building responsive and mobile-first websites. It provides a set of pre-designed components and utilities to speed up the development process.
