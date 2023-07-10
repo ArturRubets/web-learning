@@ -1,6 +1,6 @@
 body {
   font-family: "Fira Sans", sans-serif;
-  color: #616161;
+  color: rgb(97 97 97 / 0.7);
   font-size: 18px;
 }
 
@@ -203,3 +203,65 @@ li {
 }
 
 /* End Owl Carousel */
+
+/* Start Result Section */
+
+.result {
+  padding-top: 181px;
+}
+
+.collage {
+  position: relative;
+  height: 552px;
+}
+
+.collage__item {
+  position: absolute;
+  width: 100%;
+}
+
+.collage__item_first {
+  top: 99px;
+  right: 0;
+  max-width: 350px;
+  z-index: 1;
+}
+
+.collage__item_second {
+  left: -121px;
+  max-width: 570px;
+}
+
+.easy {
+  margin-top: 38px;
+}
+
+.easy__title {
+  margin-bottom: 13px;
+}
+
+.easy__text {
+  margin-bottom: 62px;
+  line-height: 28px;
+}
+
+.easy__point {
+  padding-left: 83px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.easy__point_first {
+  background: left center / contain no-repeat url("../img/icon100.svg");
+  margin-bottom: 30px;
+}
+
+.easy__point_second {
+  background: left center / contain no-repeat url("../img/bag.svg");
+}
+
+/* End Result Section */
