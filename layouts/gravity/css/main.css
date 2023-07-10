@@ -25,6 +25,19 @@ h6 {
   padding: 0;
 }
 
+h2 {
+  font-size: 40px;
+  letter-spacing: -0.025em;
+  line-height: 50px;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
 .btn {
   background: #4737ff;
   color: #fff;
@@ -36,7 +49,7 @@ h6 {
   display: inline;
   letter-spacing: 0.3em;
   text-align: center;
-  transition: all 0.5 ease;
+  transition: 0.5s;
 }
 
 .btn:hover {
@@ -100,8 +113,6 @@ h6 {
 }
 
 .about__title {
-  font-size: 40px;
-  letter-spacing: -0.025em;
   margin-bottom: 30px;
 }
 
@@ -122,3 +133,73 @@ h6 {
 .about_extra {
   margin-bottom: 0;
 }
+
+.services {
+  padding-top: 142px;
+}
+
+.section-title__label {
+  color: rgb(143 143 143 / 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.serv-list {
+  line-height: 28px;
+  margin-top: 68px;
+}
+
+.serv-list__item {
+  margin-bottom: 21px;
+}
+
+.serv-list_left {
+  margin-left: 37px;
+}
+
+/* Start Owl Carousel */
+.owl-carousel {
+  margin-top: 99px;
+}
+
+.owl-carousel .owl-stage {
+  transition: 0.5s !important;
+}
+
+.owl-carousel .owl-item {
+  transition: 0.3s ease-in;
+}
+
+.owl-theme .owl-nav {
+  text-align: left;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  margin: 0;
+}
+
+.owl-theme .owl-nav [class*="owl-prev"] {
+  margin-right: 25px;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 50px;
+}
+
+.owl-carousel__play {
+  display: block;
+  background: url("../img/play.svg") no-repeat center center / contain;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/* End Owl Carousel */
