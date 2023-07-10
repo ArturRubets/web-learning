@@ -1,6 +1,6 @@
 body {
   font-family: "Fira Sans", sans-serif;
-  color: rgb(97 97 97 / 0.7);
+  color: rgb(34 34 34 / 0.7);
   font-size: 18px;
 }
 
@@ -20,7 +20,7 @@ h5,
 h6 {
   font-style: normal;
   font-weight: 600;
-  color: #222222;
+  color: #222;
   margin: 0;
   padding: 0;
 }
@@ -61,7 +61,7 @@ li {
   height: 982px;
 }
 
-.nav {
+.header .nav {
   padding-top: 59px;
   margin-bottom: 127px;
   line-height: normal;
@@ -94,6 +94,7 @@ li {
   width: 400px;
   height: 310px;
   background: url("../img/video.jpg") no-repeat right top;
+  filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
 }
 
 .video::after {
@@ -139,7 +140,6 @@ li {
 }
 
 .section-title__label {
-  color: rgb(143 143 143 / 0.7);
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -155,6 +155,7 @@ li {
 
 .serv-list__item {
   margin-bottom: 21px;
+  color: rgb(34 34 34 / 0.5);
 }
 
 .serv-list_left {
@@ -225,6 +226,7 @@ li {
   right: 0;
   max-width: 350px;
   z-index: 1;
+  box-shadow: 30px 80px 180px 0 rgba(0, 0, 0, 0.25);
 }
 
 .collage__item_second {
@@ -265,3 +267,76 @@ li {
 }
 
 /* End Result Section */
+
+/* Start Work Section */
+
+.works {
+  padding-top: 202px;
+}
+
+.works-tabs {
+  margin: 78px 0 0 60px;
+}
+
+.works-tabs .nav-link {
+  color: rgb(34 34 34 / 0.3);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.works-tabs .active {
+  color: #1434e1;
+}
+
+.works-wrap {
+  gap: 30px;
+  margin-top: 108px;
+}
+
+.works-wrap__item {
+  position: relative;
+  transition: 1s;
+}
+
+.works-wrap__item:hover {
+  box-shadow: -30px 80px 200px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-20px);
+}
+
+.works-wrap__item:after {
+  content: "";
+  background: center / contain no-repeat url("../img/play.svg");
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+
+.works-wrap__item:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.works__caption-container {
+  margin-top: 52px;
+}
+
+.works__caption {
+  line-height: 28px;
+}
+
+.works__caption-btn {
+  line-height: 24px;
+}
+
+/* End Work Section */
