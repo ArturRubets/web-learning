@@ -190,6 +190,15 @@ li {
   display: block;
 }
 
+.video__object {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
 @media (max-width: 1200px) {
   .hero {
     width: 575px;
@@ -231,12 +240,16 @@ li {
   }
 
   .video {
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    width: 270px;
-    height: 220px;
-    background: url("../img/video.jpg") no-repeat center bottom;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    top: 25px;
+    width: auto;
+    height: auto;
+  }
+
+  .offer_first .video {
+    background-position: center;
   }
 
   .video::after {
@@ -255,7 +268,7 @@ li {
 
 @media (max-width: 576px) {
   .hero {
-    height: 400px;
+    height: 300px;
   }
 }
 

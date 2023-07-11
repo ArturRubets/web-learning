@@ -50,4 +50,15 @@ $(function () {
       '<img src="img/right.svg" alt="Arrow right" />',
     ],
   });
+
+  // Turn on video
+  $(".video").on("click", function (e) {
+    e.preventDefault();
+    const $videoItems = $(this).find(".video__object");
+    $videoItems.css({
+      opacity: "1",
+      visibility: "visible",
+    });
+    $videoItems[0].src += "?autoplay=1&controls=0";
+  });
 });
