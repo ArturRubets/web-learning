@@ -144,7 +144,7 @@ li {
   padding-top: 142px;
 }
 
-.repeated-label {
+.section-title__label {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.7em;
@@ -345,11 +345,11 @@ li {
   padding-top: 248px;
 }
 
-.testimonials .repeated-label {
+.testimonials .section-title__label {
   margin-bottom: 73px;
 }
 
-.testimonials .repeated-heading {
+.testimonials .section-title__heading {
   max-height: 204px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -400,3 +400,46 @@ li {
 /* End Testimonials Carousel */
 
 /* End Testimonials Section */
+
+/* Start Clients Section */
+
+.clients {
+  padding-top: 176px;
+}
+
+.clients .section-title {
+  padding-top: 102px;
+}
+
+.clients__heading {
+  margin-bottom: 17px;
+  font-size: 14px;
+  line-height: 1.7em;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding-top: 110px;
+}
+
+.clients__text {
+  line-height: 1.5em;
+}
+
+.clients__brands {
+  margin-top: 73px;
+}
+
+/* End Clients Section */
+
+/* Start Footer Section */
+
+.footer {
+  background: #515151;
+  margin-top: 137px;
+  height: 240px;
+}
+
+.footer-logo {
+  padding: 108px 0;
+}
+
+/* End Footer Section */
