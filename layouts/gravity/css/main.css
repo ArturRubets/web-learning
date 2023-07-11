@@ -111,17 +111,58 @@ li {
   line-height: normal;
 }
 
+.carousel-item {
+  transition: transform 1.5s ease;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-indicators {
+  right: auto;
+  margin: 0;
+  bottom: -80px;
+}
+
+.carousel-indicators li {
+  background-color: rgb(198 179 147 / 0.5);
+  width: 62px;
+  height: 2px;
+  margin: 0;
+}
+
+.carousel-indicators li:first-child {
+  margin-right: 5px;
+}
+
+.carousel-indicators li.active {
+  background-color: #c6b393;
+}
+
+.offer-cont {
+  height: 500px;
+  overflow: hidden;
+}
+
 .offer-cont__text {
   margin: 30px 0 56px;
 }
 
 .hero {
-  background: url("../img/img1.jpg") no-repeat right top;
   width: 665px;
   height: 840px;
   position: absolute;
   right: -125px;
   top: -67px;
+}
+
+.offer_first .hero {
+  background: url("../img/img1.jpg") no-repeat right top;
+}
+
+.offer_second .hero {
+  background: url("../img/img13.jpg") no-repeat right top;
 }
 
 .video {
@@ -130,8 +171,15 @@ li {
   left: -125px;
   width: 400px;
   height: 310px;
-  background: url("../img/video.jpg") no-repeat right top;
   filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
+}
+
+.offer_first .video {
+  background: url("../img/video.jpg") no-repeat right top;
+}
+
+.offer_second .video {
+  background: url("../img/video2.jpg") no-repeat left center;
 }
 
 .video::after {
@@ -164,6 +212,15 @@ li {
     margin-bottom: 80px;
   }
 
+  .carousel {
+    padding-bottom: 50px;
+  }
+
+  .carousel-indicators {
+    right: 0;
+    bottom: 0;
+  }
+
   .hero {
     position: relative;
     height: 460px;
@@ -185,6 +242,14 @@ li {
   .video::after {
     width: 50px;
     height: 50px;
+  }
+
+  .offer-cont {
+    height: auto;
+  }
+
+  .offer-cont__text {
+    margin: 25px 0 40px;
   }
 }
 
