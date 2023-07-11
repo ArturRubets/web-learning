@@ -3,6 +3,8 @@ body {
   color: rgb(34 34 34 / 0.7);
   font-size: 18px;
   line-height: 1.5em;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 button {
@@ -26,8 +28,15 @@ h6 {
   padding: 0;
 }
 
+h1 {
+  font-size: 3.3em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #151515;
+}
+
 h2 {
-  font-size: 40px;
+  font-size: 2.2em;
   letter-spacing: -0.025em;
   line-height: 1.2em;
 }
@@ -36,7 +45,7 @@ h3,
 h4 {
   line-height: 1.4em;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.2em;
 }
 
 ul,
@@ -51,7 +60,7 @@ li {
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.8em;
   padding: 14px 30px;
   border-radius: 0;
   display: inline;
@@ -66,6 +75,32 @@ li {
   color: #fff;
 }
 
+@media (max-width: 1200px) {
+  body {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 14px;
+    line-height: 1.3em;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+}
+
+/* Start Header Section */
+
 .header {
   height: 982px;
 }
@@ -74,13 +109,6 @@ li {
   padding-top: 59px;
   margin-bottom: 127px;
   line-height: normal;
-}
-
-.offer-cont__title {
-  font-size: 60px;
-  font-weight: 700;
-  color: #151515;
-  letter-spacing: -0.02em;
 }
 
 .offer-cont__text {
@@ -108,11 +136,67 @@ li {
 
 .video::after {
   content: "";
-  background: url("../img/play.svg");
+  background: url("../img/play.svg") no-repeat center center;
   width: 65px;
   height: 65px;
   display: block;
 }
+
+@media (max-width: 1200px) {
+  .hero {
+    width: 575px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    width: 455px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: auto;
+  }
+
+  .header .nav {
+    padding-top: 40px;
+    margin-bottom: 80px;
+  }
+
+  .hero {
+    position: relative;
+    height: 460px;
+    width: 100%;
+    margin: 40px auto 0;
+    right: 0;
+    top: 0;
+  }
+
+  .video {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 270px;
+    height: 220px;
+    background: url("../img/video.jpg") no-repeat center bottom;
+  }
+
+  .video::after {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 400px;
+  }
+}
+
+/* End Header Section */
+
+/* Start Problems Section */
 
 .problems {
   padding-top: 137px;
@@ -166,6 +250,8 @@ li {
 .serv-list_left {
   margin-left: 37px;
 }
+
+/* End Problems Section */
 
 /* Start Services Carousel */
 

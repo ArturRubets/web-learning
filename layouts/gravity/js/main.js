@@ -28,7 +28,7 @@ $(function () {
         '<img src="img/right.svg" alt="Arrow right" />',
       ],
       responsive: {
-        600: {
+        0: {
           items: 1,
         },
         1000: {
