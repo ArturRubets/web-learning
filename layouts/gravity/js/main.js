@@ -18,11 +18,13 @@ $(function () {
     $owl.on("translated.owl.carousel", addOpacity);
 
     $owl.owlCarousel({
-      loop: true,
+      loop: false,
       margin: 30,
       nav: true,
       dots: false,
       merge: true,
+      touchDrag: false,
+      mouseDrag: false,
       navText: [
         '<img src="img/left.svg" alt="Arrow left"/>',
         '<img src="img/right.svg" alt="Arrow right" />',
