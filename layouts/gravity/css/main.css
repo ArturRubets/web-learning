@@ -102,11 +102,16 @@ li {
 
 /* Start Common Section */
 
-.video {
+.player {
   cursor: pointer;
 }
 
-.video::after {
+.player__thumbnail {
+  height: 100%;
+  width: 100%;
+}
+
+.player__thumbnail:after {
   content: "";
   background: url("../img/play.svg") no-repeat center center;
   width: 65px;
@@ -118,7 +123,7 @@ li {
   transform: translate(-50%, -50%);
 }
 
-.video__object {
+.player__object {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -140,7 +145,7 @@ li {
 }
 
 @media (max-width: 768px) {
-  .video::after {
+  .player__thumbnail:after {
     width: 50px;
     height: 50px;
   }
@@ -218,7 +223,7 @@ li {
   background: url("../img/img13.jpg") no-repeat right top;
 }
 
-.video_hero {
+.hero .player {
   position: absolute;
   bottom: 166px;
   left: -125px;
@@ -227,11 +232,11 @@ li {
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
 }
 
-.offer_first .video_hero {
+.offer_first .player__thumbnail {
   background: url("../img/video.jpg") no-repeat right top;
 }
 
-.offer_second .video_hero {
+.offer_second .player__thumbnail {
   background: url("../img/video2.jpg") no-repeat left center;
 }
 
@@ -276,13 +281,13 @@ li {
     padding: 30px;
   }
 
-  .video_hero {
+  .hero .player {
     position: static;
     max-width: 100%;
     max-height: 100%;
   }
 
-  .offer_first .video_hero {
+  .offer_first .player__thumbnail {
     background-position: center bottom;
   }
 
@@ -534,23 +539,23 @@ li {
   margin-top: 108px;
 }
 
-.works-wrap__item {
+.works .player {
   position: relative;
   transition: 1s;
 }
 
-.works-wrap__item:hover {
+.works .player:not(:has(iframe)):hover {
   box-shadow: -30px 80px 200px 0 rgba(0, 0, 0, 0.25);
   transform: translateY(-20px);
 }
 
-.works-wrap__item:after {
+.works .player__thumbnail:after {
   opacity: 0;
   visibility: hidden;
   transition: 1s;
 }
 
-.works-wrap__item:hover:after {
+.works .player__thumbnail:hover:after {
   opacity: 1;
   visibility: visible;
 }
@@ -584,11 +589,11 @@ li {
     margin-top: 40px;
   }
 
-  .works-wrap__item:hover {
+  .works .player__thumbnail:hover {
     transform: none;
   }
 
-  .works-wrap__item:after {
+  .works .player__thumbnail:after {
     opacity: 1;
     visibility: visible;
   }

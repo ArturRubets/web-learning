@@ -76,16 +76,10 @@
                     <div
                       class="hero d-flex justify-content-center align-items-center"
                     >
-                      <a class="video video_hero" href="#">
-                        <iframe
-                          class="video__object"
-                          src="https://www.youtube.com/embed/D7SlK16o82o"
-                          title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowfullscreen
-                        ></iframe>
-                      </a>
+                      <div class="player">
+                        <div class="player__thumbnail"></div>
+                        <div class="player__object" id="heroPlayer1"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -110,16 +104,10 @@
                     <div
                       class="hero d-flex justify-content-center align-items-center"
                     >
-                      <a class="video video_hero" href="#">
-                        <iframe
-                          class="video__object"
-                          src="https://www.youtube.com/embed/TYfYX0ngLkE"
-                          title="Kyiv, Ukraine 🇺🇦 in 4K 60FPS ULTRA HD Video by Drone"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowfullscreen
-                        ></iframe>
-                      </a>
+                      <div class="player">
+                        <div class="player__thumbnail"></div>
+                        <div class="player__object" id="heroPlayer2"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -191,56 +179,36 @@
           <div class="col">
             <div class="owl-carousel owl-theme services-carousel">
               <div class="item" data-merge="1.5">
-                <a class="video video_service">
-                  <img src="img/img3.jpg" alt="Work" />
-                  <iframe
-                    class="video__object"
-                    src="https://www.youtube.com/embed/5fzYJtuhueU"
-                    title="Ukraine In 4K 🇺🇦 |【4K】Ultra HD Beautiful Drone Footage Україна"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
-                </a>
+                <div class="player">
+                  <div class="player__thumbnail">
+                    <img class="img-fluid" src="img/img3.jpg" alt="Work" />
+                  </div>
+                  <div class="player__object" id="servicePlayer1"></div>
+                </div>
               </div>
               <div class="item" data-merge="1.5">
-                <a class="video video_service">
-                  <img src="img/img4.jpg" alt="Work" />
-                  <iframe
-                    class="video__object"
-                    src="https://www.youtube.com/embed/5d5aeIQaTUA"
-                    title="FLYING OVER UKRAINE (4K UHD) - Relaxing Music With Wonderful Natural Landscapes For Daily Relaxation"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
-                </a>
+                <div class="player">
+                  <div class="player__thumbnail">
+                    <img class="img-fluid" src="img/img4.jpg" alt="Work" />
+                  </div>
+                  <div class="player__object" id="servicePlayer2"></div>
+                </div>
               </div>
               <div class="item" data-merge="1.5">
-                <a class="video video_service">
-                  <img src="img/img3.jpg" alt="Work" />
-                  <iframe
-                    class="video__object"
-                    src="https://www.youtube.com/embed/qOhk7YyxXQ4"
-                    title="Ukraine In 4K - Country Of Beautiful Natural Wonders | Scenic Relaxation Film"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
-                </a>
+                <div class="player">
+                  <div class="player__thumbnail">
+                    <img class="img-fluid" src="img/img3.jpg" alt="Work" />
+                  </div>
+                  <div class="player__object" id="servicePlayer3"></div>
+                </div>
               </div>
               <div class="item" data-merge="1.5">
-                <a class="video video_service">
-                  <img src="img/img4.jpg" alt="Work" />
-                  <iframe
-                    class="video__object"
-                    src="https://www.youtube.com/embed/lAyWhJ6tr9E"
-                    title="Top 10 Places To Visit In Ukraine - 4K Travel Guide"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                  ></iframe>
-                </a>
+                <div class="player">
+                  <div class="player__thumbnail">
+                    <img class="img-fluid" src="img/img4.jpg" alt="Work" />
+                  </div>
+                  <div class="player__object" id="servicePlayer4"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -378,72 +346,42 @@
                 <div
                   class="works-wrap d-flex flex-wrap justify-content-around justify-content-xl-start"
                 >
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img7.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img8.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img9.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img10.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img11.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img12.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img7.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer1"></div>
+                  </div>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img8.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer2"></div>
+                  </div>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img9.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer3"></div>
+                  </div>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img10.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer4"></div>
+                  </div>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img11.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer5"></div>
+                  </div>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img12.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer6"></div>
+                  </div>
                 </div>
               </div>
               <div
@@ -455,28 +393,18 @@
                 <div
                   class="works-wrap d-flex flex-wrap justify-content-around justify-content-xl-start"
                 >
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img7.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img8.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img7.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer7"></div>
+                  </div>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img8.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer8"></div>
+                  </div>
                 </div>
               </div>
               <div
@@ -488,28 +416,18 @@
                 <div
                   class="works-wrap d-flex flex-wrap justify-content-around justify-content-xl-start"
                 >
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img9.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img10.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img9.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer9"></div>
+                  </div>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img10.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer10"></div>
+                  </div>
                 </div>
               </div>
               <div
@@ -521,17 +439,12 @@
                 <div
                   class="works-wrap d-flex flex-wrap justify-content-around justify-content-xl-start"
                 >
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img11.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img11.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer11"></div>
+                  </div>
                 </div>
               </div>
               <div
@@ -543,17 +456,12 @@
                 <div
                   class="works-wrap d-flex flex-wrap justify-content-around justify-content-xl-start"
                 >
-                  <a class="works-wrap__item video" href="#">
-                    <img class="img-fluid" src="img/img12.jpg" alt="Work" />
-                    <iframe
-                      class="video__object"
-                      src="https://www.youtube.com/embed/D7SlK16o82o"
-                      title="Ukraine 4K - Scenic Relaxation Film With Calming Music"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
-                    ></iframe>
-                  </a>
+                  <div class="player">
+                    <div class="player__thumbnail">
+                      <img class="img-fluid" src="img/img12.jpg" alt="Work" />
+                    </div>
+                    <div class="player__object" id="worksPlayer12"></div>
+                  </div>
                 </div>
               </div>
             </div>
