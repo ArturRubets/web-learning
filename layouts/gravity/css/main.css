@@ -786,14 +786,11 @@ li {
 
 .footer {
   background: #515151;
-}
-
-.footer-logo {
   padding: 108px 0;
 }
 
 @media (max-width: 768px) {
-  .footer-logo {
+  .footer {
     padding: 70px 0;
   }
 }
