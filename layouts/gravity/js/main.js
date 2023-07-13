@@ -48,6 +48,7 @@ $(function () {
     margin: 80,
     nav: true,
     dots: false,
+    autoHeight: true,
     navText: [
       '<img src="img/left.svg" alt="Arrow left"/>',
       '<img src="img/right.svg" alt="Arrow right" />',
