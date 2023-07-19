@@ -18,9 +18,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--radial-bg), var(--linear-bg),
-    url("../img/slider-bg/01.jpg") center / cover no-repeat #c4c4c4;
   color: #fff;
+  &--norway {
+    background: var(--radial-bg), var(--linear-bg),
+      url("../img/slider-bg/01.jpg") center / cover no-repeat #c4c4c4;
+  }
+  &--austria {
+    background: var(--radial-bg), var(--linear-bg),
+      url("../img/slider-bg/02.jpg") center / cover no-repeat #c4c4c4;
+  }
+  &--uae {
+    background: var(--radial-bg), var(--linear-bg),
+      url("../img/slider-bg/03.jpg") center / cover no-repeat #c4c4c4;
+  }
+  &--thailand {
+    background: var(--radial-bg), var(--linear-bg),
+      url("../img/slider-bg/04.jpg") center / cover no-repeat #c4c4c4;
+  }
+  &--morocco {
+    background: var(--radial-bg), var(--linear-bg),
+      url("../img/slider-bg/05.jpg") center / cover no-repeat #c4c4c4;
+  }
   &::before {
     content: "";
   }
