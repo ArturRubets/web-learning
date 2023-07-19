@@ -12,6 +12,13 @@
   );
 }
 
+@mixin background-clip {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
 .slide {
   height: 100vh;
   padding-bottom: 80px;
@@ -87,10 +94,33 @@
         rgba(255, 255, 255, 0) 20%
       ),
       #fff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+
+    @include background-clip;
+  }
+  &--norway span {
+    background: linear-gradient(50deg, #051d27, rgba(255, 255, 255, 0) 20%),
+      #fff;
+    @include background-clip;
+  }
+  &--austria span {
+    background: linear-gradient(50deg, #122127, rgba(255, 255, 255, 0) 20%),
+      #fff;
+    @include background-clip;
+  }
+  &--uae span {
+    background: linear-gradient(50deg, #aa6621, rgba(255, 255, 255, 0) 20%),
+      #fff;
+    @include background-clip;
+  }
+  &--thailand span {
+    background: linear-gradient(50deg, #2e7c88, rgba(255, 255, 255, 0) 20%),
+      #fff;
+    @include background-clip;
+  }
+  &--morocco span {
+    background: linear-gradient(50deg, #757575, rgba(255, 255, 255, 0) 20%),
+      #fff;
+    @include background-clip;
   }
 }
 
