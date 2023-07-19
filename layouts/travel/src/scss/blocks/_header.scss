@@ -67,10 +67,9 @@
   pointer-events: all;
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translate(0%, -50%);
-  left: auto;
-  width: 10px;
-  height: 400px;
-  background-color: #878787;
+  top: 45%;
+  width: 400px;
+  height: 10px;
+  transform: rotate(90deg) translate(50%, 0%);
+  transform-origin: right top;
 }
