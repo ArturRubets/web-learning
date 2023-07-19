@@ -54,6 +54,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  @media (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .header__slider-control {
@@ -61,6 +64,9 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  @media (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .header__scrollbar {
@@ -72,4 +78,15 @@
   height: 10px;
   transform: rotate(90deg) translate(50%, 0%);
   transform-origin: right top;
+  @media (min-width: 768px) and (max-height: 700px) {
+    width: 300px;
+  }
+  @media (max-width: 767px) {
+    transform: none;
+    top: unset;
+    bottom: -15px;
+    left: 0;
+    right: unset;
+    width: 100%;
+  }
 }
