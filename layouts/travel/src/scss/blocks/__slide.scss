@@ -57,6 +57,9 @@
   @media (max-width: 767px) {
     padding: 100px 0 40px;
   }
+  @media (max-height: 680px) {
+    padding-bottom: 30px;
+  }
 }
 
 .slide__header {

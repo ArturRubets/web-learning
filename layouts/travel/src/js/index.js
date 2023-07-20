@@ -22,6 +22,12 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".slider-control__count",
     type: "fraction",
+    formatFractionCurrent: function (number) {
+      return ("0" + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+      return ("0" + number).slice(-2);
+    },
   },
 
   // Navigation arrows
