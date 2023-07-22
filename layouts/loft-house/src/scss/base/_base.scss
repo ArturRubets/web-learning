@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,4 +8,14 @@ body {
   background-color: var(--page-bg);
   color: var(--text-color);
   font-family: var(--font-main);
+  font-size: 16px;
+}
+
+a {
+  color: var(--text-color);
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: var(--accent);
+  }
 }
