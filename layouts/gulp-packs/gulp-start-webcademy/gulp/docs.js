@@ -27,6 +27,12 @@ const changed = require("gulp-changed");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 
+// Fonts
+const fonter = require("gulp-fonter");
+const ttf2woff2 = require("gulp-ttf2woff2");
+
+const rename = require("gulp-rename");
+
 gulp.task("clean:docs", function (done) {
   if (fs.existsSync("./docs/")) {
     return gulp.src("./docs/", { read: false }).pipe(clean({ force: true }));
@@ -91,6 +97,19 @@ gulp.task("images:docs", function () {
 gulp.task("fonts:docs", function () {
   return gulp
     .src("./src/fonts/**/*")
+    .pipe(
+      fonter({
+        formats: ["woff", "ttf"],
+      })
+    )
+    .pipe(gulp.src("./src/fonts/**/*"))
+    .pipe(ttf2woff2())
+    .pipe(
+      rename(function (file) {
+        file.dirname = ""; // Видаляємо папку fonts з шляху
+        file.basename = file.basename.replace("fonts\\", ""); // Видаляємо "fonts\" з імені файлу
+      })
+    )
     .pipe(changed("./docs/fonts/"))
     .pipe(gulp.dest("./docs/fonts/"));
 });

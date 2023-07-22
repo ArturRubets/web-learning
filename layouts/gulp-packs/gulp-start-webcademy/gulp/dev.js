@@ -12,6 +12,9 @@ const webpack = require("webpack-stream");
 const babel = require("gulp-babel");
 const imagemin = require("gulp-imagemin");
 const changed = require("gulp-changed");
+const fonter = require("gulp-fonter");
+const ttf2woff2 = require("gulp-ttf2woff2");
+const rename = require("gulp-rename");
 
 gulp.task("clean:dev", function (done) {
   if (fs.existsSync("./build/")) {
@@ -69,6 +72,19 @@ gulp.task("images:dev", function () {
 gulp.task("fonts:dev", function () {
   return gulp
     .src("./src/fonts/**/*")
+    .pipe(
+      fonter({
+        formats: ["woff", "ttf"],
+      })
+    )
+    .pipe(gulp.src("./src/fonts/**/*"))
+    .pipe(ttf2woff2())
+    .pipe(
+      rename(function (file) {
+        file.dirname = ""; // Видаляємо папку fonts з шляху
+        file.basename = file.basename.replace("fonts\\", ""); // Видаляємо "fonts\" з імені файлу
+      })
+    )
     .pipe(changed("./build/fonts/"))
     .pipe(gulp.dest("./build/fonts/"));
 });
