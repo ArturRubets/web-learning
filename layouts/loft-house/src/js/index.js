@@ -1,6 +1,9 @@
 import mobileNav from "./modules/mobile-nav.js";
 mobileNav();
 
+import initMap from "./modules/google-maps.js";
+initMap();
+
 /* Phone Mask */
 mask("[data-tel-input]");
 
