@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starter template</title>
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    @@include('blocks/header.html')
-    <main>
-      @@include('blocks/benefits.html')
-      @@include('blocks/apartments.html')
-      @@include('blocks/cta.html')
-      @@include('blocks/video.html')
-      @@include('blocks/section-map.html')
-      @@include('blocks/feedback.html')
-    </main>
-    @@include('blocks/footer.html')
-    <script src="./libs/phoneMask/mask.js"></script>
-    <script src="./libs/phoneMask/mask_list.js"></script>
-    <script src="./js/index.bundle.js"></script>
-  </body> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starter template</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css">
+</head>
+
+<body>
+  @@include('blocks/header.html')
+  <main>
+    @@include('blocks/benefits.html')
+    @@include('blocks/apartments.html')
+    @@include('blocks/cta.html')
+    @@include('blocks/video.html')
+    @@include('blocks/section-map.html')
+    @@include('blocks/feedback.html')
+  </main>
+  @@include('blocks/footer.html')
+  @@include('blocks/youtube-lightbox.html')
+
+  <script src="./libs/phoneMask/mask.js"></script>
+  <script src="./libs/phoneMask/mask_list.js"></script>
+  <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+  <script src="./js/index.bundle.js"></script>
+</body>
+
 </html>
