@@ -7,3 +7,28 @@ body {
   color: var(--text-color);
   font-family: var(--font-main);
 }
+
+a {
+  color: var(--text-color);
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.title-2 {
+  font-size: 36px;
+  font-family: var(--font-accent);
+  color: var(--accent);
+  font-weight: 700;
+
+  @include mediaTablet {
+    font-size: 28px;
+  }
+}
+
+.link-bold {
+  color: var(--accent);
+  font-weight: 700;
+}

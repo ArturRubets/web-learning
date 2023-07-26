@@ -1,6 +1,7 @@
 .video {
   text-align: center;
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "IV";
@@ -42,4 +43,9 @@
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in;
+
+  @include mediaTablet {
+    width: 80px;
+    height: 80px;
+  }
 }

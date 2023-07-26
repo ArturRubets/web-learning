@@ -25,6 +25,10 @@ a {
   font-family: var(--font-accent);
   color: var(--accent);
   font-weight: 700;
+
+  @include mediaTablet {
+    font-size: 28px;
+  }
 }
 
 .link-bold {
