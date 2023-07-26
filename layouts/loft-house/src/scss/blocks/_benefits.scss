@@ -1,5 +1,18 @@
 .benefits {
+  position: relative;
   padding: 120px 0;
+
+  &::after {
+    content: "II";
+    color: rgb(255 255 255 / 0.02);
+    font-size: 400px;
+    font-family: var(--font-accent);
+    position: absolute;
+    top: 0;
+    left: calc(50% + 555px);
+    transform: translate(-50%, 0);
+    line-height: 1.15;
+  }
 }
 
 .benefits__row {
