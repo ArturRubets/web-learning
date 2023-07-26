@@ -19,6 +19,7 @@ youtubelightbox.addEventListener(
   "click",
   function () {
     this.style.display = "none";
+    document.body.classList.remove("no-scroll");
     player.stopVideo();
   },
   false
@@ -72,6 +73,7 @@ function createlightbox() {
     targetlinks[i].addEventListener(
       "click",
       function (e) {
+        document.body.classList.add("no-scroll");
         youtubelightbox.style.display = "block";
         if (typeof player == "undefined") {
           // if video player hasn't been created yet
