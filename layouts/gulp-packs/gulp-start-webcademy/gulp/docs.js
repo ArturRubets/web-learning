@@ -131,6 +131,10 @@ gulp.task("js:docs", function () {
     .pipe(gulp.dest("./docs/js/"));
 });
 
+gulp.task("libs:docs", function () {
+  return gulp.src("./src/libs/**/*").pipe(gulp.dest("./docs/libs/"));
+});
+
 const serverOptions = {
   livereload: true,
   open: true,

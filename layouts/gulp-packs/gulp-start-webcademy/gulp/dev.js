@@ -108,6 +108,10 @@ gulp.task("js:dev", function () {
   );
 });
 
+gulp.task("libs:dev", function () {
+  return gulp.src("./src/libs/**/*").pipe(gulp.dest("./build/libs/"));
+});
+
 const serverOptions = {
   livereload: true,
   open: true,
@@ -124,4 +128,5 @@ gulp.task("watch:dev", function () {
   gulp.watch("./src/fonts/**/*", gulp.parallel("fonts:dev"));
   gulp.watch("./src/files/**/*", gulp.parallel("files:dev"));
   gulp.watch("./src/js/**/*.js", gulp.parallel("js:dev"));
+  gulp.watch("./src/libs/**/*", gulp.parallel("libs:dev"));
 });

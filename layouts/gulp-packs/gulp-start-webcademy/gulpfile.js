@@ -14,7 +14,8 @@ gulp.task(
       "images:dev",
       "fonts:dev",
       "files:dev",
-      "js:dev"
+      "js:dev",
+      "libs:dev"
     ),
     gulp.parallel("server:dev", "watch:dev")
   )
@@ -30,7 +31,8 @@ gulp.task(
       "images:docs",
       "fonts:docs",
       "files:docs",
-      "js:docs"
+      "js:docs",
+      "libs:docs"
     ),
     gulp.parallel("server:docs")
   )
