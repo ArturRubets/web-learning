@@ -12,11 +12,11 @@
   --footer-bg: #2d343c;
   --placeholder: #bebebe;
   --muted: #e7e7e7;
-
-  --laptop-size: 1199px;
-  --tablet-size: 959px;
-  --mobile-size: 599px;
 }
+
+$laptop: 1199px;
+$tablet: 999px;
+$mobile: 599px;
 
 .dark {
   --page-bg: #252526;

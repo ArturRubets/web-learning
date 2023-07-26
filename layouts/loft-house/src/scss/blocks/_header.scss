@@ -11,12 +11,31 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 30px 0 74px;
+
+  @include mediaTablet {
+    min-height: unset;
+    row-gap: 50px;
+  }
 }
 
 .header__top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__nav {
+  @include mediaTablet {
+    display: none;
+  }
+}
+
+.header__nav-btn {
+  display: none;
+
+  @include mediaTablet {
+    display: block;
+  }
 }
 
 .header__title {
@@ -27,6 +46,11 @@
   font-size: 48px;
   font-weight: 700;
   padding-bottom: 121px;
+
+  @include mediaTablet {
+    font-size: 32px;
+    padding-bottom: 100px;
+  }
 }
 
 .header__title-icon {
@@ -36,8 +60,14 @@
   transform: translateY(-50%);
 }
 
-.header__footer-items{
+.header__footer-items {
   display: flex;
   justify-content: center;
   gap: 98px;
+
+  @include mediaTablet {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 }

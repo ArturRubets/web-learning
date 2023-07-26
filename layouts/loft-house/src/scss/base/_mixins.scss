@@ -7,3 +7,9 @@
   top: 0;
   z-index: -1;
 }
+
+@mixin mediaTablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
