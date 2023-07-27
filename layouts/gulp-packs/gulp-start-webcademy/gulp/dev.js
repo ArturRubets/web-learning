@@ -64,7 +64,7 @@ gulp.task("images:dev", function () {
     gulp
       .src("./src/img/**/*")
       .pipe(changed("./build/img/"))
-      // .pipe(imagemin({ verbose: true })) Для розробки не потрібно
+      // .pipe(imagemin({ verbose: true })) Для dev розробки не потрібно
       .pipe(gulp.dest("./build/img/"))
   );
 });
