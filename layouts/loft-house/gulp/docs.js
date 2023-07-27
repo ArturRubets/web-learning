@@ -61,7 +61,7 @@ gulp.task("html:docs", function () {
     .pipe(changed("./docs/"))
     .pipe(plumber(plumberNotify("HTML")))
     .pipe(fileInclude(fileIncludeSetting))
-    .pipe(webpHTML())
+    .pipe(webpHTML()) // Працює криво. Треба щоб кожен img був в одному рядку без розривів і без пробілів в src.
     .pipe(htmlclean())
     .pipe(gulp.dest("./docs/"));
 });
@@ -74,7 +74,7 @@ gulp.task("sass:docs", function () {
     .pipe(sourceMaps.init())
     .pipe(autoprefixer())
     .pipe(sassGlob())
-    .pipe(webpCss())
+    .pipe(webpCss()) // Здається не працює
     .pipe(groupMedia())
     .pipe(sass())
     .pipe(csso())
