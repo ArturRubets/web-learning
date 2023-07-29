@@ -1,22 +1,20 @@
+$mobile: 640px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1440px;
+
 :root {
   --container-width: 1200px;
   --container-padding: 15px;
 
   --font-main: "Poppins", sans-serif;
   --font-accent: "Playfair Display", serif;
-  // --font-secondary: "Roboto", sans-serif;
+  --font-secondary: "Roboto", sans-serif;
 
   --page-bg: #fff;
   --text-color: #000;
   --accent: #ac182c;
-  // --footer-bg: #2d343c;
-  // --placeholder: #bebebe;
-  // --muted: #e7e7e7;
 }
-
-$laptop: 1199px;
-$tablet: 959px;
-$mobile: 599px;
 
 .dark {
   --page-bg: #252526;

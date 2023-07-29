@@ -23,12 +23,7 @@ a {
   color: var(--accent);
   font-weight: 700;
 
-  @include mediaTablet {
+  @media (min-width: $tablet) {
     font-size: 28px;
   }
-}
-
-.link-bold {
-  color: var(--accent);
-  font-weight: 700;
 }
