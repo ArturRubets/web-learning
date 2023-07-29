@@ -1,29 +1,16 @@
-html {
-  scroll-behavior: smooth;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;900&display=swap');
 
-body {
-  background-color: var(--page-bg);
-  color: var(--text-color);
-  font-family: var(--font-main);
-}
-
-a {
-  color: var(--text-color);
-  transition: color 0.2s ease-in;
-
-  &:hover {
-    color: var(--accent);
+  html {
+    scroll-behavior: smooth;
   }
-}
 
-.title-2 {
-  font-size: 36px;
-  font-family: var(--font-accent);
-  color: var(--accent);
-  font-weight: 700;
+  body {
+    background-color: var(--page-bg);
+    color: var(--text-color);
+    font-family: var(--font-main);
 
-  @media (min-width: $tablet) {
-    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-style: normal;
+    font-size: 16px;
   }
-}
