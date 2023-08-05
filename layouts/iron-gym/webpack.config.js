@@ -4,7 +4,7 @@ const config = {
     index: "./src/js/index.js",
   },
   output: {
-    filename: "[name].bundle.[contenthash].js",
+    filename: "[name].bundle.js",
   },
   module: {
     rules: [

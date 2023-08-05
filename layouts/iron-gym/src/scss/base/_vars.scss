@@ -1,16 +1,20 @@
-$mobile: 640px;
-$tablet: 768px;
-$laptop: 1024px;
 $desktop: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobileL: 640px;
+
+$container-width: 1244px;
+$container-padding: calc(98px / $desktop * 100%);
+$container-padding-laptop: calc(40px / $laptop * 100%);
+$container-padding-tablet: calc(30px / $tablet * 100%);
+$container-padding-mobile: 20px;
 
 :root {
-  --container-width: 1244px;
-  --container-padding: 15px;
-
   --font-main: "Poppins", sans-serif;
   --font-accent: "Bebas Neue", sans-serif;
 
   --page-bg: #000;
   --text-color: #fff;
   --accent: #f00;
+  --decorative-stripe-color: #e2e2e2;
 }

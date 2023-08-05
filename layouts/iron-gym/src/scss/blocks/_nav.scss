@@ -1,0 +1,35 @@
+.nav {
+    color: var(--text-color);
+    text-align: center;
+
+    font-family: var(--font-accent);
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.14;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav__list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav__item {
+    &--active {
+        color: var(--accent);
+    }
+
+    &:hover {
+        color: var(--accent);
+    }
+}
+
+@media (max-width: $laptop) {
+    .nav {
+        display: none;
+    }
+}
