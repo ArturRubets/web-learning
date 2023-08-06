@@ -2,6 +2,7 @@ $desktop: 1440px;
 $laptop: 1024px;
 $tablet: 768px;
 $mobileL: 640px;
+$mobileM: 425px;
 
 $container-width: 1244px;
 $container-padding: calc(98px / $desktop * 100%);
@@ -17,4 +18,5 @@ $container-padding-mobile: 20px;
   --text-color: #fff;
   --accent: #f00;
   --decorative-stripe-color: #e2e2e2;
+  --decorative-border-color: #ccc;
 }

@@ -4,6 +4,10 @@
     scroll-behavior: smooth;
   }
 
+  body {
+    min-width: 320px;
+  }
+
   html,
   body {
     background-color: var(--page-bg);

@@ -1,0 +1,134 @@
+.about-us__inner {
+    background: url('../img/about-us/image1.jpg') center/cover no-repeat, lightgray 0px -0.096px / 100% 118.25% no-repeat;
+    padding: 112px 0 104px;
+    position: relative;
+    overflow: hidden;
+
+    z-index: 1;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0 0 0 / 0.9);
+
+        z-index: -1;
+    }
+}
+
+.about-us__row {
+    display: flex;
+    gap: 79px; // 64px + 15px
+}
+
+.about-us__column {
+    flex: 1 1 auto;
+}
+
+.about-us__title {
+    margin-bottom: 16px;
+    max-width: 510px;
+}
+
+.about-us__text {
+    max-width: 602px;
+    margin-bottom: 56px;
+
+    p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.about-us__image-wrapper {
+    text-align: right;
+}
+
+.about-us__image {
+    display: inline-block;
+    position: relative;
+    margin-top: 24px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -56px;
+        left: -64px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        border: 1px solid var(--accent);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -64px;
+        right: -56px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        border: 1px solid var(--decorative-border-color);
+    }
+}
+
+@media (max-width: $laptop) {
+    .about-us__row {
+        flex-direction: column;
+        gap: 120px;
+    }
+
+    .about-us__image-wrapper {
+        text-align: center;
+    }
+
+    .about-us__text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: $tablet) {
+    .about-us__title {
+        max-width: 310px;
+    }
+
+    .about-us__image {
+        max-width: 300px;
+        margin: 0;
+
+        &::before {
+            top: -36px;
+            left: -44px;
+        }
+
+        &::after {
+            bottom: -44px;
+            right: -36px;
+        }
+    }
+}
+
+@media (max-width: $mobileL) {
+    .about-us__image {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: $mobileM) {
+    .about-us__image {
+        &::before {
+            top: -16px;
+            left: -24px;
+        }
+
+        &::after {
+            bottom: -24px;
+            right: -16px;
+        }
+    }
+}

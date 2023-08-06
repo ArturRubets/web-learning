@@ -54,3 +54,13 @@
         font-size: calc(91px * 0.65);
     }
 }
+
+@media (max-width: $mobileL) {
+    .title {
+        font-size: calc(122px * 0.5);
+    }
+
+    .title-2 {
+        font-size: calc(91px * 0.5);
+    }
+}
