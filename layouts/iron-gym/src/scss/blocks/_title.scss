@@ -2,29 +2,55 @@
     color: var(--text-color);
     font-family: var(--font-accent);
     font-size: 122px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.11;
 }
 
+.title-2 {
+    color: var(--text-color);
+    font-family: var(--font-accent);
+    font-size: 91px;
+    font-weight: 700;
+    line-height: 1.05;
+}
+
+.title-4 {
+    color: var(--text-color);
+    font-family: var(--font-accent);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.26;
+}
+
+.title-5 {
+    color: var(--accent);
+    font-family: var(--font-accent);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.14;
+}
+
 .title__accent {
     color: var(--accent);
+    white-space: nowrap;
 }
 
 @media (max-width: $laptop) {
     .title {
-        font-size: 100px;
+        font-size: calc(122px * 0.8);
+    }
+
+    .title-2 {
+        font-size: calc(91px * 0.8);
     }
 }
 
 @media (max-width: $tablet) {
     .title {
-        font-size: 80px;
+        font-size: calc(122px * 0.65);
     }
-}
 
-@media (max-width: $mobileL) {
-    .title {
-        font-size: 60px;
+    .title-2 {
+        font-size: calc(91px * 0.65);
     }
 }

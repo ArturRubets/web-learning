@@ -1,6 +1,6 @@
 .container {
   padding: 0 $container-padding;
-  max-width: $container-width;
+  max-width: calc($container-width + $container-padding * 2);
   margin: 0 auto;
 }
 

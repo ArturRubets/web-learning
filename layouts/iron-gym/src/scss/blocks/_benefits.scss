@@ -1,0 +1,57 @@
+.benefits {
+    background: #121212;
+    padding: 72px 0;
+}
+
+.benefits__top {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.benefits__title {
+    margin-bottom: 16px;
+}
+
+.benefits__title-description {
+    max-width: 573px;
+    display: inline-block;
+}
+
+.benefits__items {
+    /* Скидуємо значення лічильника */
+    counter-reset: item-counter;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.benefits__item {
+    /* Збільшуємо значення лічильника для кожного .benefits__item */
+    counter-increment: item-counter;
+
+    padding: 23px 39px;
+    width: 47%;
+    border: 1px solid var(--accent);
+}
+
+.benefits__item-count {
+    margin-bottom: 24px;
+
+    &::before {
+        /* Виводимо значення лічильника */
+        content: counter(item-counter, decimal-leading-zero);
+    }
+}
+
+
+@media (max-width: $tablet) {
+    .benefits__items {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .benefits__item {
+        width: 100%;
+    }
+}
