@@ -7,7 +7,6 @@
     display: flex;
     gap: 42px;
     position: relative;
-    overflow: hidden;
 }
 
 .cta__bg {
@@ -28,7 +27,7 @@
 .cta__image {
     max-height: 695px;
     position: relative;
-    top: calc(-56px);
+    top: -41px;
 }
 
 .cta__title {
@@ -68,6 +67,7 @@
         flex-direction: column-reverse;
         align-items: center;
         padding: 0 100px;
+        overflow: hidden;
     }
 
     .cta__image {
