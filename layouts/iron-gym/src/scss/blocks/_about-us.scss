@@ -93,6 +93,10 @@
 }
 
 @media (max-width: $tablet) {
+    .about-us__inner {
+        background: none;
+    }
+
     .about-us__title {
         max-width: 310px;
     }
