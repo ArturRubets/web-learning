@@ -9,12 +9,14 @@
 
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
 .nav__list {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .nav__item {
@@ -24,11 +26,5 @@
 
     &:hover {
         color: var(--accent);
-    }
-}
-
-@media (max-width: $laptop) {
-    .nav {
-        display: none;
     }
 }
