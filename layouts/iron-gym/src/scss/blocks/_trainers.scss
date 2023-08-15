@@ -1,5 +1,6 @@
 .trainers {
     padding: 72px 0;
+    background-color: var(--section-color);
 }
 
 .trainers__top {
@@ -49,18 +50,6 @@
 
     .trainers__slider-pagination {
         text-align: center;
-    }
-
-    .trainers__pagination-bullet {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background-color: var(--pagination-bullet-color);
-        margin: 0 4px;
-
-        &-active {
-            background-color: var(--accent);
-        }
     }
 }
 

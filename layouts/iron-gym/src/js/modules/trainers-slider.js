@@ -8,7 +8,6 @@ function trainersSlider() {
     keyboard: {
       enabled: true,
     },
-
     breakpoints: {
       640: {
         slidesPerView: 2.5,
@@ -29,12 +28,11 @@ function trainersSlider() {
         slidesOffsetAfter: 98,
       },
     },
-
     pagination: {
       el: ".trainers__slider-pagination",
       type: "bullets",
-      bulletClass: "trainers__pagination-bullet", // Вказати клас для кожного квадратика
-      bulletActiveClass: "trainers__pagination-bullet-active", // Вказати клас для активного квадратика
+      bulletClass: "swiper__pagination-bullet", // Вказати клас для кожного квадратика
+      bulletActiveClass: "swiper__pagination-bullet--active", // Вказати клас для активного квадратика
       clickable: true,
     },
   });
