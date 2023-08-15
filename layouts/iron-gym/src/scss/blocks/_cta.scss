@@ -7,11 +7,13 @@
     display: flex;
     gap: 42px;
     position: relative;
+    padding-right: 40px
 }
 
 .cta__bg {
     position: absolute;
     top: 0;
+    left: 0;
     z-index: 1;
     height: 674px;
 }
@@ -27,7 +29,7 @@
 .cta__image {
     max-height: 695px;
     position: relative;
-    top: -41px;
+    top: -30px;
 }
 
 .cta__title {
@@ -58,7 +60,7 @@
     flex: auto;
 }
 
-@media (width < $desktop) {
+@media (max-width: $desktop) {
     .cta {
         padding: 128px 0 0;
     }
@@ -68,6 +70,7 @@
         align-items: center;
         padding: 0 100px;
         overflow: hidden;
+        gap: 0;
     }
 
     .cta__image {
