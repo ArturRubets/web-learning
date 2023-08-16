@@ -1,0 +1,20 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;900&display=swap');
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-width: 320px;
+  }
+
+  html,
+  body {
+    background-color: var(--page-bg);
+    color: var(--text-color);
+    font-family: var(--font-main);
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+  }

@@ -1,0 +1,28 @@
+.container {
+  padding: 0 $container-padding;
+  max-width: calc($container-width + $container-padding * 2);
+  margin: 0 auto;
+}
+
+.container-full {
+  max-width: calc($container-width + $container-padding * 2);
+  margin: 0 auto;
+}
+
+@media (max-width: $laptop) {
+  .container {
+    padding: 0 $container-padding-laptop;
+  }
+}
+
+@media (max-width: $tablet) {
+  .container {
+    padding: 0 $container-padding-tablet;
+  }
+}
+
+@media (max-width: $mobileL) {
+  .container {
+    padding: 0 $container-padding-mobile;
+  }
+}
