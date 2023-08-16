@@ -1,6 +1,28 @@
 .container {
-  padding: 0 var(--container-padding);
-  max-width: var(--container-width);
+  padding: 0 $container-padding;
+  max-width: calc($container-width + $container-padding * 2);
   margin: 0 auto;
-  width: 100%;
+}
+
+.container-full {
+  max-width: calc($container-width + $container-padding * 2);
+  margin: 0 auto;
+}
+
+@media (max-width: $laptop) {
+  .container {
+    padding: 0 $container-padding-laptop;
+  }
+}
+
+@media (max-width: $tablet) {
+  .container {
+    padding: 0 $container-padding-tablet;
+  }
+}
+
+@media (max-width: $mobileL) {
+  .container {
+    padding: 0 $container-padding-mobile;
+  }
 }

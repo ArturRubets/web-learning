@@ -1,0 +1,17 @@
+.btn {
+    padding: 23px 39px;
+    color: var(--accent);
+    text-transform: uppercase;
+
+    font-family: var(--font-accent);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.14;
+    background-color: transparent;
+    border: 1px solid var(--accent);
+
+    &--filled {
+        background: var(--accent);
+        color: var(--text-color);
+    }
+}
