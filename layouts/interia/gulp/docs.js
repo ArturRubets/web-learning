@@ -94,6 +94,13 @@ gulp.task("images:docs", function () {
     .pipe(gulp.dest("./docs/img/"));
 });
 
+gulp.task("assets:docs", function () {
+  return gulp
+    .src("./src/assets/**/*")
+    .pipe(changed("./docs/assets/"))
+    .pipe(gulp.dest("./docs/assets/"));
+});
+
 gulp.task("fonts:docs", function () {
   return gulp
     .src("./src/fonts/**/*")
