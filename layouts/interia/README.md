@@ -1,4 +1,4 @@
-# Project name
+# Interia
 
 This project is a web development project that includes both design files in Figma and the website implementation.
 
@@ -6,7 +6,7 @@ This project is a web development project that includes both design files in Fig
 
 The design files for this project can be found in the following Figma link:
 
-[Figma Design]()
+[Figma Design](<https://www.figma.com/file/UtaC56mtrjFlkPg0D9NhmX/Interia---Interior-Design-Landing-Page-Design-(Free)-(Community)?type=design&node-id=1-1996&mode=design&t=n4S6vWllFKHnsliX-0>)
 
 ## Website Implementation
 

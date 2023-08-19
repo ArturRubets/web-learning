@@ -1,46 +1,57 @@
 .title {
-    color: var(--text-color);
+    --font-size-title: 122px;
+
     font-family: var(--font-accent);
     font-weight: 700;
-
     font-size: var(--font-size-title);
-    line-height: 1.11;
+
+    color: var(--text-color);
+    line-height: normal;
 }
 
 .title-2 {
-    color: var(--text-color);
-    font-family: var(--font-accent);
-    font-weight: 700;
+    --font-size-title-2: 16px;
 
+    font-family: var(--font-accent);
+    font-weight: 400;
     font-size: var(--font-size-title-2);
-    line-height: 1.05;
+
+    color: var(--accent);
+    line-height: normal;
+    letter-spacing: calc(6.88em / 16);
 }
 
 .title-3 {
-    color: var(--text-color);
-    font-family: var(--font-accent);
-    font-weight: 700;
+    --font-size-title-3: 40px;
 
+    font-family: var(--font-accent);
+    font-weight: 400;
     font-size: var(--font-size-title-3);
-    line-height: 1.15;
+
+    color: var(--text-color);
+    line-height: normal;
 }
 
 .title-4 {
-    color: var(--text-color);
+    --font-size-title-4: 38px;
+
     font-family: var(--font-accent);
     font-weight: 700;
-
     font-size: var(--font-size-title-4);
-    line-height: 1.26;
+
+    color: var(--text-color);
+    line-height: normal;
 }
 
 .title-5 {
-    color: var(--accent);
+    --font-size-title-5: 28px;
+
     font-family: var(--font-accent);
     font-weight: 700;
-
     font-size: var(--font-size-title-5);
-    line-height: 1.14;
+
+    color: var(--accent);
+    line-height: normal;
 }
 
 .title__accent {

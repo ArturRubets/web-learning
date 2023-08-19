@@ -1,31 +1,20 @@
-$desktop: 1440px;
+$laptopL: 1440px;
 $laptop: 1024px;
 $tablet: 768px;
 $mobileL: 640px;
 $mobileM: 425px;
 
-$container-width: 1244px;
-$container-padding: calc(98px / $desktop * 100%);
-$container-padding-laptop: calc(40px / $laptop * 100%);
-$container-padding-tablet: calc(30px / $tablet * 100%);
-$container-padding-mobile: 20px;
-
 :root {
-  --font-main: "Poppins", sans-serif;
-  --font-accent: "Bebas Neue", sans-serif;
+  --container-width: 1140px;
+  --container-padding: 20px;
 
-  --font-size-title: 122px;
-  --font-size-title-2: 91px;
-  --font-size-title-3: 60px;
-  --font-size-title-4: 38px;
-  --font-size-title-5: 28px;
+  --font-main: "Nunito", sans-serif;
+  --font-accent: "Kanit", sans-serif;
 
-  --page-bg: #000;
+  --page-bg: #191D1D;
   --text-color: #fff;
-  --accent: #f00;
-  --decorative-stripe-color: #e2e2e2;
-  --decorative-border-color: #ccc;
-  --pagination-bullet-color: #484848;
-  --horizontal-line-color: #484848;
-  --section-color: #121212;
+  --accent: #6D7D7D;
+  --section-color: #131616;
+  --placeholder-bg: #D9D9D9;
+  --horizontal-line: #212828;
 }
