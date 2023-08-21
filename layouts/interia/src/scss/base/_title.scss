@@ -19,6 +19,8 @@
     color: var(--accent);
     line-height: normal;
     letter-spacing: calc(6.88em / 16);
+
+    text-transform: uppercase;
 }
 
 .title-3 {
@@ -33,14 +35,17 @@
 }
 
 .title-4 {
-    --font-size-title-4: 38px;
+    --font-size-title-4: 16px;
 
     font-family: var(--font-accent);
-    font-weight: 700;
+    font-weight: 400;
     font-size: var(--font-size-title-4);
 
-    color: var(--text-color);
+    color: var(--accent);
     line-height: normal;
+    letter-spacing: calc(6.88em / 16);
+
+    text-transform: uppercase;
 }
 
 .title-5 {
@@ -64,9 +69,9 @@
         font-size: calc(var(--font-size-title) * 0.8);
     }
 
-    .title-2 {
-        font-size: calc(var(--font-size-title-2) * 0.8);
-    }
+    // .title-2 {
+    //     font-size: calc(var(--font-size-title-2) * 0.8);
+    // }
 
     .title-3 {
         font-size: calc(var(--font-size-title-3) * 0.8);
@@ -78,9 +83,9 @@
         font-size: calc(var(--font-size-title) * 0.65);
     }
 
-    .title-2 {
-        font-size: calc(var(--font-size-title-2) * 0.65);
-    }
+    // .title-2 {
+    //     font-size: calc(var(--font-size-title-2) * 0.65);
+    // }
 
     .title-3 {
         font-size: calc(var(--font-size-title-3) * 0.75);
@@ -92,17 +97,17 @@
         font-size: calc(var(--font-size-title) * 0.55);
     }
 
-    .title-2 {
-        font-size: calc(var(--font-size-title-2) * 0.55);
-    }
+    // .title-2 {
+    //     font-size: calc(var(--font-size-title-2) * 0.55);
+    // }
 
     .title-3 {
         font-size: calc(var(--font-size-title-3) * 0.65);
     }
 
-    .title-4 {
-        font-size: calc(var(--font-size-title-4) * 0.9);
-    }
+    // .title-4 {
+    //     font-size: calc(var(--font-size-title-4) * 0.9);
+    // }
 
     .title-5 {
         font-size: calc(var(--font-size-title-5) * 0.9);

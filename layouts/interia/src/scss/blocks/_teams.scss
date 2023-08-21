@@ -1,0 +1,186 @@
+.teams {
+    background-color: var(--section-color);
+}
+
+.teams__inner {
+    padding: 268px 0 100px;
+    position: relative;
+}
+
+.teams__row {
+    display: flex;
+    margin-bottom: 75px;
+}
+
+.teams__col {
+    flex: 1;
+}
+
+.teams__col-inner {
+    max-width: 440px;
+    padding-right: 15px;
+}
+
+.teams__title-3 {
+    margin-bottom: 27px;
+}
+
+.teams__text {
+    margin-bottom: 74px;
+}
+
+.teams__trusted-avatars {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.teams__trusted-avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    border: 3px solid var(--border-color);
+    overflow: hidden;
+    position: relative;
+
+    &:nth-child(n+2) {
+        margin-left: -15px;
+    }
+}
+
+.teams__trusted-img {
+    object-fit: cover;
+    width: inherit;
+    height: inherit;
+
+    // Black and white image
+    -webkit-filter: grayscale(100%); // Safari 6.0 - 9.0
+    filter: grayscale(100%);
+}
+
+.teams__trusted-reviews {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.teams__photo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 22px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teams__btn-wrapper {
+    width: 274px;
+}
+
+.teams__photo {
+    width: 274px;
+    height: 274px;
+    object-fit: cover;
+}
+
+.teams__logos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 25px 15px;
+    flex-wrap: wrap;
+}
+
+.teams__logo {
+    width: 255px;
+    height: 98px;
+}
+
+.teams__card {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: -150px;
+}
+
+.teams__card-inner {
+    border-radius: 50px;
+    background: var(--horizontal-line);
+
+    display: flex;
+
+    padding: 61px 35px 69px 38%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.teams__card-img {
+    width: 38%;
+    min-width: 300px;
+    height: 435px;
+    border-radius: 435px;
+
+    position: absolute;
+    top: -65px;
+    left: -70px;
+    bottom: -52px;
+}
+
+.teams__card-title {
+    margin-bottom: 29px;
+}
+
+@media (max-width: $laptopL) {
+    .teams__row {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .teams__photo-wrapper {
+        justify-content: center;
+    }
+
+    .teams__btn-wrapper {
+        order: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width: $laptop) {
+    .teams__logos {
+        justify-content: center;
+    }
+
+    .teams__card-img {
+        border-radius: 100%;
+    }
+}
+
+@media (max-width: $tablet) {
+    .teams__card-img {
+        display: none;
+    }
+
+    .teams__card {
+        margin-top: -100px;
+    }
+
+    .teams__card-inner {
+        padding: 31px 20px 39px 20px;
+    }
+}
+
+@media (max-width: $mobileL) {
+    .teams__photo-wrapper {
+        flex-direction: column;
+    }
+
+    .teams__photo {
+        width: 240px;
+        height: 240px;
+    }
+
+    .teams__card {
+        margin-top: -120px;
+    }
+}
