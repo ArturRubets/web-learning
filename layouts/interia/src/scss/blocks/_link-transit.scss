@@ -1,0 +1,22 @@
+.link-transit {
+    text-transform: uppercase;
+    letter-spacing: calc(6.88em / 16);
+    position: relative;
+    padding-right: 30px;
+
+    &::after {
+        content: "";
+        position: absolute;
+
+        background-image: url(../img/achievements/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        width: 14px;
+        height: 14px;
+
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
