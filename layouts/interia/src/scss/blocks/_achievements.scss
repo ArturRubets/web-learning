@@ -1,0 +1,110 @@
+.achievements {
+    padding: 100px 0;
+}
+
+.achievements__content {
+    counter-reset: section-counter; // Ініціалізація лічильника
+}
+
+.achievements__row {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+        padding-bottom: 47px;
+        border-bottom: 1px solid var(--horizontal-line);
+    }
+
+    &~& {
+        margin-top: 47px;
+    }
+
+    &>* {
+        flex: 1;
+    }
+}
+
+.achievements__title {
+    margin-top: 16px;
+    counter-increment: section-counter; // Збільшення значення лічильника
+
+    &::before {
+        content: counter(section-counter, decimal-leading-zero) ". "; // Виведення значення лічильника перед заголовком
+    }
+}
+
+.achievements__col-inner {
+    max-width: 412px;
+    margin-left: auto;
+}
+
+.achievements__text {
+    color: var(--accent);
+    margin-bottom: 22px;
+}
+
+.achievements__link {
+    text-transform: uppercase;
+    letter-spacing: calc(6.88em / 16);
+    position: relative;
+    padding-right: 30px;
+
+    &::after {
+        content: "";
+        position: absolute;
+
+        background-image: url(../img/achievements/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        width: 14px;
+        height: 14px;
+
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.achievements__gallery {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.achievements__img {
+    flex: 1;
+    width: 25%;
+    max-width: 480px;
+    max-height: 515px;
+}
+
+@media (max-width: $tablet) {
+    .achievements__img {
+        width: 50%;
+    }
+}
+
+@media (max-width: $mobileL) {
+    .achievements__row {
+        flex-direction: column;
+    }
+
+    .achievements__col-inner {
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .achievements__gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 0 15px;
+    }
+
+    .achievements__img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
