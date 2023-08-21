@@ -2,6 +2,17 @@
     position: relative;
 }
 
+.hero__poster {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 0.8s;
+}
+
 .hero__video {
     object-fit: cover;
     position: absolute;
