@@ -1,0 +1,54 @@
+.cta {
+    padding: 75px 0;
+}
+
+.cta__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px 129px;
+}
+
+.cta__title-3 {
+    min-width: 246px;
+}
+
+.cta__form {
+    flex: 1;
+    display: flex;
+    gap: 35px 24px;
+    width: 100%;
+}
+
+.cta__input {
+    border-bottom: 1px solid var(--accent);
+    padding: 8px 27px;
+    width: 100%;
+
+    transition: background-color .2s ease-in;
+
+    &::placeholder {
+        color: var(--text-color);
+    }
+
+    &:focus {
+        background-color: rgba(255, 255, 255, .05);
+    }
+}
+
+.cta__btn {
+    min-width: 229px;
+}
+
+@media (max-width: $laptop) {
+    .cta__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: $tablet) {
+    .cta__form {
+        flex-direction: column;
+    }
+}
