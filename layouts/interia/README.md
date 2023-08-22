@@ -12,7 +12,7 @@ The design files for this project can be found in the following Figma link:
 
 The website implementation can be accessed through the following link:
 
-[Website]()
+[Website](https://interiadesign.netlify.app/)
 
 ## Technologies Used:
 
@@ -21,3 +21,5 @@ The website implementation can be accessed through the following link:
 **BEM (Block Element Modifier)**: BEM is a naming convention used for writing modular and maintainable CSS code. It helps to organize CSS classes into blocks, elements, and modifiers, making the codebase more structured and easier to manage.
 
 **Responsive Design**: Responsive Design is a web development approach that ensures the website adapts and displays properly on various devices and screen sizes, such as desktops, tablets, and mobile phones. It improves the user experience and accessibility of the website across different devices.
+
+**Video Integration**: Notably, a captivating enhancement has been implemented in the hero section. Upon clicking the play button, a video seamlessly integrates, augmenting the visual appeal and engagement of the page.

@@ -50,15 +50,20 @@
     flex-wrap: wrap;
 }
 
-.achievements__img {
+.achievements__gallery-item {
     flex: 1;
     width: 25%;
     max-width: 480px;
     max-height: 515px;
 }
 
+.achievements__img {
+    height: 100%;
+    width: 100%;
+}
+
 @media (max-width: $tablet) {
-    .achievements__img {
+    .achievements__gallery-item {
         width: 50%;
     }
 }
@@ -78,7 +83,7 @@
         align-items: center;
     }
 
-    .achievements__img {
+    .achievements__gallery-item {
         width: 100%;
         max-width: 400px;
     }

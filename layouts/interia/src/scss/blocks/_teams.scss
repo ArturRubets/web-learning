@@ -45,6 +45,11 @@
     &:nth-child(n+2) {
         margin-left: -15px;
     }
+
+    picture {
+        width: inherit;
+        height: inherit;
+    }
 }
 
 .teams__trusted-img {

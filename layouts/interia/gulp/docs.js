@@ -61,7 +61,7 @@ gulp.task("html:docs", function () {
     .pipe(changed("./docs/"))
     .pipe(plumber(plumberNotify("HTML")))
     .pipe(fileInclude(fileIncludeSetting))
-    .pipe(webpHTML())
+    .pipe(webpHTML()) // Щоб не було помилки треба, щоб всі теги img в проекті були прописані в одному рядку.
     .pipe(htmlclean())
     .pipe(gulp.dest("./docs/"));
 });
