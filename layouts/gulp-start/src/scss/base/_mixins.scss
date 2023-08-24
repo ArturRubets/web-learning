@@ -1,0 +1,5 @@
+// Міксін для задання letter-spacing в em
+// $value: Значення в px
+@mixin ls($value) {
+    letter-spacing: calc(#{$value}em / 16);
+}

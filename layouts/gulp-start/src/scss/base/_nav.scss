@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--text-color);
+    text-align: center;
+
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav__list {
+    display: flex;
+    gap: 25px 55px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav__item {
+    &--active {
+        color: var(--accent);
+    }
+
+    &:hover {
+        color: var(--accent);
+    }
+}
+
+@media (max-width: $mobileL) {
+    .nav__list {
+        flex-direction: column;
+    }
+}

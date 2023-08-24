@@ -1,0 +1,10 @@
+.logo__img {
+    width: 120px;
+    height: 32px;
+}
+
+.logo__text {
+    font-family: var(--font-accent);
+    @include ls(6.88);
+    text-transform: uppercase;
+}

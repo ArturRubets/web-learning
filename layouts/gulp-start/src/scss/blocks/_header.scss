@@ -1,127 +1,31 @@
-.header__outer {
+.header {
     position: relative;
-    background: url('../img/header/header-image.jpg') center/cover no-repeat, lightgray -40px -0.065px / 111.667% 104.7% no-repeat;
-
-    &::before {
-        content: "";
-        background: linear-gradient(90deg, #000 3.13%, rgba(0, 0, 0, 0.07) 75%);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
 }
 
-.header__top {
-    position: relative;
+.header__outer {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+
+    padding: 32px 0;
+}
+
+.header__inner {
     display: flex;
-    gap: 25px;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    gap: 52px;
 }
 
-.header__top-btn {
-    padding: 16px 40px;
-}
-
-.header__content {
-    position: relative;
-    padding: 120px 0 100px;
-}
-
-.header__title {
-    max-width: 598px;
-    margin-bottom: 32px;
-}
-
-.header__text {
-    color: #F1F1F1;
-    max-width: 660px;
-    margin-bottom: 56px;
-}
-
-.header__content-btn {
-    margin-bottom: 80px;
-
-    &--extra {
-        display: none;
-    }
-}
-
-.header__achievements {
-    display: flex;
-    gap: 80px;
-}
-
-.header__achievement-item {
-    text-align: center;
-    position: relative;
-
-    &:not(:last-child)::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -40px;
-        bottom: 0;
-        width: 1px;
-        background-color: var(--decorative-stripe-color);
-    }
-}
-
-.header__achievement-number {
-    color: var(--accent);
-    font-family: var(--font-accent);
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 1.12;
+.header__nav {
+    margin-left: auto;
 }
 
 @media (max-width: $laptop) {
+
+    .header__nav,
     .header__top-btn {
         display: none;
-    }
-
-    .header__content-btn--extra {
-        display: block;
-        margin-bottom: 40px;
-    }
-
-    .header__nav {
-        display: none !important;
-    }
-}
-
-@media (max-width: $tablet) {
-    .header__outer::before {
-        background: linear-gradient(90deg, #000 10%, rgba(0, 0, 0, 0.1) 100%);
-    }
-}
-
-@media (max-width: $mobileL) {
-    .header__outer {
-        background-position: left;
-    }
-
-    .header__outer::before {
-        background: linear-gradient(90deg, #000 10%, rgba(0, 0, 0, 0.4) 100%);
-    }
-
-    .header__content {
-        padding: 80px 0 100px;
-    }
-
-    .header__achievements {
-        flex-direction: column;
-    }
-
-    .header__achievement-item {
-        &:not(:last-child)::after {
-            right: 0;
-            left: 0;
-            bottom: -40px;
-            height: 1px;
-            top: unset;
-            width: auto;
-        }
     }
 }

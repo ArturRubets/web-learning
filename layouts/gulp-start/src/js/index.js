@@ -1,2 +1,7 @@
 import mobileNav from "./modules/mobile-nav.js";
-mobileNav();
+import initializeHeroVideo from "./modules/hero-video.js";
+
+document.addEventListener("DOMContentLoaded", function () {
+  mobileNav();
+  initializeHeroVideo();
+});

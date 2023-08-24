@@ -61,7 +61,7 @@ gulp.task("html:docs", function () {
     .pipe(changed("./docs/"))
     .pipe(plumber(plumberNotify("HTML")))
     .pipe(fileInclude(fileIncludeSetting))
-    .pipe(webpHTML())
+    .pipe(webpHTML()) // Щоб не було помилки треба, щоб всі теги img в проекті були прописані в одному рядку.
     .pipe(htmlclean())
     .pipe(gulp.dest("./docs/"));
 });
@@ -92,6 +92,13 @@ gulp.task("images:docs", function () {
     .pipe(changed("./docs/img/"))
     .pipe(imagemin({ verbose: true }))
     .pipe(gulp.dest("./docs/img/"));
+});
+
+gulp.task("assets:docs", function () {
+  return gulp
+    .src("./src/assets/**/*")
+    .pipe(changed("./docs/assets/"))
+    .pipe(gulp.dest("./docs/assets/"));
 });
 
 gulp.task("fonts:docs", function () {
