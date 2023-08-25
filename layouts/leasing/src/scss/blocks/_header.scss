@@ -1,0 +1,31 @@
+.header {
+    position: relative;
+}
+
+.header__outer {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+
+    padding: 32px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 52px;
+}
+
+.header__nav {
+    margin-left: auto;
+}
+
+@media (max-width: $laptop) {
+
+    .header__nav,
+    .header__top-btn {
+        display: none;
+    }
+}

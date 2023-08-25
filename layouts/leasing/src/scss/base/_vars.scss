@@ -1,0 +1,19 @@
+$laptopL: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobileL: 640px;
+$mobileM: 425px;
+
+:root {
+  --container-width: 1140px;
+  --container-padding: 20px;
+
+  --font-main: "Nunito", sans-serif;
+  --font-accent: "Kanit", sans-serif;
+
+  --page-bg: #191D1D;
+  --text-color: #fff;
+  --accent: #6D7D7D;
+  --section-color: #131616;
+  --horizontal-line: #212828;
+}

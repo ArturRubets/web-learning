@@ -1,0 +1,10 @@
+.container {
+  padding: 0 var(--container-padding);
+  max-width: calc(var(--container-width) + var(--container-padding) * 2);
+  margin: 0 auto;
+}
+
+.container-full {
+  max-width: calc(var(--container-width) + var(--container-padding) * 2);
+  margin: 0 auto;
+}

@@ -1,0 +1,13 @@
+.btn {
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    border-radius: 100px;
+    padding: 7px 27px;
+
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-family: var(--font-accent);
+    font-weight: 400;
+    line-height: normal;
+    @include ls(6.88);
+}
