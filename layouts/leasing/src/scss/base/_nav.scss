@@ -3,13 +3,14 @@
     align-items: center;
     justify-content: center;
 
-    color: var(--text-color);
+    color: var(--page-bg);
     text-align: center;
 
     font-family: var(--font-main);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
+    text-transform: uppercase;
 }
 
 .nav__list {

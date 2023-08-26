@@ -1,7 +1,7 @@
 import mobileNav from "./modules/mobile-nav.js";
-import initializeHeroVideo from "./modules/hero-video.js";
+import initializeHeroSlider from "./modules/hero-slider.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   mobileNav();
-  initializeHeroVideo();
+  initializeHeroSlider();
 });

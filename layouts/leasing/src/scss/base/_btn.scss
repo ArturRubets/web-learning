@@ -1,13 +1,10 @@
 .btn {
-    background-color: transparent;
-    border: 1px solid var(--accent);
-    border-radius: 100px;
-    padding: 7px 27px;
+    background-color: var(--section-color);
+    padding: 13px 61px;
 
     text-transform: uppercase;
-    color: var(--text-color);
-    font-family: var(--font-accent);
+    color: var(--page-bg);
+    font-family: var(--font-main);
     font-weight: 400;
-    line-height: normal;
-    @include ls(6.88);
+    line-height: inherit;
 }

@@ -1,19 +1,19 @@
 .title {
-    --font-size-title: 122px;
+    --font-size-title: 96px;
 
-    font-family: var(--font-accent);
+    font-family: var(--font-main);
     font-weight: 700;
     font-size: var(--font-size-title);
 
-    color: var(--text-color);
+    color: var(--page-bg);
     line-height: normal;
 }
 
 .title-2 {
-    --font-size-title-2: 16px;
+    --font-size-title-2: 40px;
 
-    font-family: var(--font-accent);
-    font-weight: 400;
+    font-family: var(--font-main);
+    font-weight: 700;
     font-size: var(--font-size-title-2);
 
     color: var(--accent);
@@ -21,41 +21,25 @@
 }
 
 .title-3 {
-    --font-size-title-3: 40px;
+    --font-size-title-3: 24px;
 
-    font-family: var(--font-accent);
-    font-weight: 400;
+    font-family: var(--font-main);
+    font-weight: 700;
     font-size: var(--font-size-title-3);
 
     color: var(--text-color);
     line-height: normal;
 }
 
-.title-4 {
-    --font-size-title-4: 16px;
-
-    font-family: var(--font-accent);
-    font-weight: 400;
-    font-size: var(--font-size-title-4);
-
-    color: var(--accent);
-    line-height: normal;
-}
-
-.title-5 {
-    --font-size-title-5: 28px;
-
-    font-family: var(--font-accent);
-    font-weight: 700;
-    font-size: var(--font-size-title-5);
-
-    color: var(--accent);
-    line-height: normal;
-}
-
 .title__accent {
     color: var(--accent);
     white-space: nowrap;
+}
+
+@media (max-width: $laptopL) {
+    .title {
+        font-size: calc(var(--font-size-title) * 0.9);
+    }
 }
 
 @media (max-width: $laptop) {
@@ -65,10 +49,6 @@
 
     .title-2 {
         font-size: calc(var(--font-size-title-2) * 0.8);
-    }
-
-    .title-3 {
-        font-size: calc(var(--font-size-title-3) * 0.8);
     }
 }
 
@@ -88,7 +68,7 @@
 
 @media (max-width: $mobileL) {
     .title {
-        font-size: calc(var(--font-size-title) * 0.55);
+        font-size: calc(var(--font-size-title) * 0.45);
     }
 
     .title-2 {
@@ -97,13 +77,5 @@
 
     .title-3 {
         font-size: calc(var(--font-size-title-3) * 0.65);
-    }
-
-    .title-4 {
-        font-size: calc(var(--font-size-title-4) * 0.9);
-    }
-
-    .title-5 {
-        font-size: calc(var(--font-size-title-5) * 0.9);
     }
 }
