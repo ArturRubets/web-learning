@@ -61,6 +61,7 @@
         background: var(--text-color);
         height: 3px;
         width: 120px;
+        cursor: pointer;
 
         &--active {
             background: #FFF;
