@@ -1,0 +1,65 @@
+.why-lease {
+    padding: 150px 0;
+}
+
+.why-lease__title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.why-lease__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px 40px;
+}
+
+.why-lease__item {
+    text-align: center;
+}
+
+.why-lease__item-img {
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+.why-lease__item-title {
+    margin-bottom: 30px;
+}
+
+.why-lease__item-text {
+    text-align: start;
+}
+
+@media (max-width: $laptopL) {
+    .why-lease__items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: $laptop) {
+    .why-lease__items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: $tablet) {
+    .why-lease {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: $mobileL) {
+    .why-lease {
+        padding: 50px 0;
+    }
+
+    .why-lease__items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .why-lease__item-img {
+        width: 125px;
+        height: 125px;
+    }
+}

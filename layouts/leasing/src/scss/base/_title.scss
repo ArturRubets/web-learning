@@ -10,13 +10,13 @@
 }
 
 .title-2 {
-    --font-size-title-2: 40px;
+    --font-size-title-2: 48px;
 
     font-family: var(--font-main);
     font-weight: 700;
     font-size: var(--font-size-title-2);
 
-    color: var(--accent);
+    color: var(--text-color);
     line-height: normal;
 }
 
@@ -27,7 +27,7 @@
     font-weight: 700;
     font-size: var(--font-size-title-3);
 
-    color: var(--text-color-light);
+    color: var(--text-color);
     line-height: normal;
 }
 
