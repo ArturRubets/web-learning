@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.header-secondary .header__outer {
+    background-color: var(--text-color);
+}
+
 .header__outer {
     position: absolute;
     z-index: 10;
@@ -20,6 +24,10 @@
 
 .header__nav {
     margin-left: auto;
+
+    &--active {
+        color: var(--accent);
+    }
 }
 
 @media (max-width: $laptop) {
@@ -27,7 +35,7 @@
     .header__nav {
         display: none;
     }
-    
+
     .header__inner {
         align-items: center;
     }
