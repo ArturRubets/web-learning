@@ -1,0 +1,145 @@
+.choose-car {
+    padding: 100px 0 150px;
+}
+
+.choose-car__title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.choose-car__tabs {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 80px;
+    margin-bottom: 100px;
+}
+
+.choose-car__tab {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+
+    &--active {
+        color: var(--accent);
+    }
+}
+
+.choose-car__cards {
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    justify-content: space-between;
+    gap: 80px 40px;
+
+    &--active {
+        display: grid;
+    }
+}
+
+.choose-car__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--accent);
+    align-items: center;
+}
+
+.choose-car__card-content {
+    height: 100%;
+    width: 100%;
+    padding: 20px 18px;
+    border: 1px solid var(--accent);
+    border-right: 0;
+    border-left: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    text-align: center;
+}
+
+.choose-car__card-img {
+    position: relative;
+    min-height: 170px;
+    width: 100%;
+
+    a {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.choose-car__card-price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.choose-car__card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-car__card-link {
+    color: var(--accent) !important;
+    padding: 2px 0;
+}
+
+.choose-car__btn {
+    display: block;
+    margin: 70px auto 0;
+}
+
+@media (max-width: $laptopL) {
+    .choose-car__tabs {
+        gap: 30px 50px;
+    }
+
+    .choose-car__tab {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: $laptop) {
+    .choose-car__tabs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: $tablet) {
+    .choose-car {
+        padding: 75px 0 100px;
+    }
+
+    .choose-car__btn {
+        margin: 40px auto 0;
+    }
+}
+
+@media (max-width: $mobileL) {
+    .choose-car {
+        padding: 50px 0 75px;
+    }
+
+    .choose-car__title {
+        margin-bottom: 40px;
+    }
+
+    .choose-car__tabs {
+        grid-template-columns: 1fr;
+        margin-bottom: 80px;
+    }
+
+    .choose-car__tab {
+        font-size: 20px;
+    }
+}
