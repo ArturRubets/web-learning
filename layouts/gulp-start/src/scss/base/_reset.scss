@@ -82,6 +82,10 @@ select {
   background-color: transparent;
 }
 
+textarea {
+  resize: none;
+}
+
 input::-ms-clear {
   display: none;
 }
