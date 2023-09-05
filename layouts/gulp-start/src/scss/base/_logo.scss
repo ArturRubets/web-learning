@@ -3,12 +3,6 @@
     height: 55px;
 }
 
-.logo__text {
-    font-family: var(--font-accent);
-    @include ls(6.88);
-    text-transform: uppercase;
-}
-
 @media (max-width: $mobileL) {
     .logo__img {
         width: calc(83px * 0.8);
