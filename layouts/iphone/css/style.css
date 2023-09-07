@@ -1,0 +1,28 @@
+/* Header */
+
+header {
+    background-color: var(--text-color);
+    padding: 33px 0;
+}
+
+.header__nav-list,
+.header__nav-phone {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.header__nav-phone {
+    text-align: right;
+}
+
+@media (max-width: 1000px) {
+    .header__nav-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 18px 0;
+    }
+}
