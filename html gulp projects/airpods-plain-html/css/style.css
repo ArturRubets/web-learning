@@ -1,0 +1,287 @@
+/* Common */
+
+a {
+    transition: color 0.3s ease-in;
+}
+
+a:hover {
+    color: white;
+}
+
+/* Header */
+
+.header {
+    background-color: var(--text-color);
+    padding: 33px 0;
+}
+
+.header__nav-list,
+.header__nav-phone {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.header__nav-phone {
+    text-align: right;
+}
+
+@media (max-width: 1000px) {
+    .header__nav-phone {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        padding: 18px 0;
+    }
+}
+
+/* Hero */
+
+.hero {
+    background: var(--section-color);
+    padding: 71px 0 40px;
+    text-align: center;
+}
+
+.hero__title {
+    margin-bottom: 40px;
+}
+
+.hero__image {
+    max-height: 657px;
+    margin: 0 auto 25px;
+    display: block;
+}
+
+@media (max-width: 650px) {
+    .hero {
+        padding: 50px 0 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero__btn {
+        padding: 20px 87px;
+    }
+}
+
+/* Whats new */
+
+.whats-new {
+    padding: 87px 0 75px;
+}
+
+.whats-new__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.whats-new__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.whats-new__column-content {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.whats-new__column-content b {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.whats-new__image {
+    margin-top: 37px;
+    max-height: 370px;
+}
+
+@media (max-width: 768px) {
+    .whats-new__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .whats-new__column-content {
+        max-width: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .whats-new {
+        padding: 50px 0;
+    }
+}
+
+/* Choose */
+
+.choose {
+    padding: 75px 0;
+}
+
+.choose__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.choose__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+}
+
+.choose__item {
+    text-align: center;
+}
+
+.choose__img {
+    width: 240px;
+    height: 320px;
+    margin-bottom: 20px;
+}
+
+.choose__name {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media (max-width: 1440px) {
+    .choose__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .choose__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .choose {
+        padding: 50px 0;
+    }
+
+    .choose__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Cta */
+
+.cta {
+    padding: 75px 0 0;
+}
+
+.cta__row {
+    display: flex;
+}
+
+.cta__col {
+    flex: 1;
+}
+
+.form {
+    background: var(--deep-purple);
+    padding: 137px 92px;
+    text-align: center;
+}
+
+.form__title {
+    margin-bottom: 62px;
+    color: #fff;
+}
+
+.form__input {
+    width: 100%;
+    border-bottom: var(--section-color) solid 1px;
+    padding: 10px 10px 10px 0;
+    color: rgb(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+.form__input::placeholder {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.form__hint {
+    color: rgb(255, 255, 255, 0.5);
+    margin: 10px 0 30px;
+}
+
+.form__submit {
+    background-color: #fff;
+    color: var(--accent);
+    padding: 16px 81px;
+}
+
+.cta__image {
+    height: 100%;
+}
+
+@media (max-width: 1440px) {
+    .form {
+        padding: 137px 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cta__row {
+        flex-direction: column;
+    }
+
+    .form {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 650px) {
+    .form {
+        padding: 70px 30px;
+    }
+
+    .form__title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--text-color);
+    padding: 51px 0;
+    color: var(--heading);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer__phone {
+    font-size: 24px;
+}
+
+@media (max-width: 650px) {
+    .footer {
+        padding: 18px 0;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+    }
+
+    .footer__privacy {
+        order: 3;
+    }
+}
