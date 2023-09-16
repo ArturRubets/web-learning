@@ -12,7 +12,7 @@ function mobileNav() {
 
   function toggleMobileNav() {
     // Add animation
-    navList.classList.add("nav__list-animation");
+    navList.classList.add("nav__list--animation");
     nav.classList.toggle("mobile-nav--active");
     document.body.classList.toggle("no-scroll");
   }
@@ -23,7 +23,7 @@ function mobileNav() {
 
     if (isBtnHidden) {
       // Remove animation
-      navList.classList.remove("nav__list-animation");
+      navList.classList.remove("nav__list--animation");
       nav.classList.remove("mobile-nav--active");
       document.body.classList.remove("no-scroll");
     }
